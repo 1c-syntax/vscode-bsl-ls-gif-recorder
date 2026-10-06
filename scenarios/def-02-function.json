@@ -1,0 +1,19 @@
+{
+  "name": "def-02-function",
+  "feature": "definition",
+  "title": "Переход к объявлению функции",
+  "titleEn": "Go to a function declaration",
+  "fixture": "demo.bsl",
+  "content": "Функция Сложить(Знач Первое, Знач Второе) Экспорт\n\tВозврат Первое + Второе;\nКонецФункции\n\nСумма = Сложить(2, 3);\n",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 960,
+  "steps": [
+    { "action": "goto", "line": 5, "column": 11 },
+    { "action": "pause", "ms": 1200 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 2500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

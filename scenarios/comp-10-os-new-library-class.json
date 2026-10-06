@@ -1,0 +1,3 @@
+{ "name":"comp-10-os-new-library-class","feature":"completion","title":"OneScript: классы библиотеки после Новый (при #Использовать)","titleEn":"OneScript: library classes after New (with #Использовать)",
+  "workspace":"/home/coder/project/oscript-demo","fixture":"comp-os.os","content":"#Использовать demolib\n\nПроцедура Демо()\n\t\nКонецПроцедуры\n","warmupMs":120000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":4},{"action":"type","text":"Объект = Новый Форматир","delay":150},{"action":"suggest"},{"action":"pause","ms":2000},{"action":"shot","name":"popup"}]}

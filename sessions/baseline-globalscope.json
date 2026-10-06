@@ -1,0 +1,13 @@
+{
+ "workspace": "/home/coder/project/bsl-demo",
+ "warmupMs": 90000,
+ "scenarios": [
+  "01-global-functions",
+  "03-new-object",
+  "comp-06-collection-members",
+  "hover-03-platform-method",
+  "signatureHelp-04-platform",
+  "semanticTokens-01",
+  "semanticTokens-02-query"
+ ]
+}

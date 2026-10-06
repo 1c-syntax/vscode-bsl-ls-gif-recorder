@@ -1,0 +1,3 @@
+{ "name":"comp-09-enum-values","feature":"completion","title":"Автодополнение членов менеджера перечисления","titleEn":"Enumeration manager members",
+  "fixture":"comp-enum.bsl","content":"Процедура Демонстрация()\n\t\nКонецПроцедуры\n","warmupMs":180000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"Перечисления.ВажностьПроблемыУчета.","delay":75},{"action":"waitSuggest","maxMs":12000},{"action":"pause","ms":2200},{"action":"shot","name":"popup"}]}

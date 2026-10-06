@@ -1,0 +1,18 @@
+{
+  "name": "refs-01-method-cross-module",
+  "feature": "references",
+  "title": "Поиск использований метода по всей конфигурации",
+  "titleEn": "Find all usages of a method across the configuration",
+  "openQuery": "src/cf/CommonModules/ОбщегоНазначения/Ext/Module.bsl",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 1100,
+  "steps": [
+    { "action": "goto", "line": 413, "column": 21 },
+    { "action": "pause", "ms": 1500 },
+    { "action": "shot", "name": "declaration" },
+    { "action": "key", "key": "Shift+F12" },
+    { "action": "pause", "ms": 3500 },
+    { "action": "shot", "name": "references" }
+  ]
+}

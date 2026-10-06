@@ -1,0 +1,3 @@
+{ "name":"codeAction-01","feature":"codeAction","title":"Быстрые исправления (quick fix)","titleEn":"Quick fixes",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"demo.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"goto","line":27,"column":19},{"action":"pause","ms":1000},{"action":"shot","name":"usage"},{"action":"key","key":"Control+Period"},{"action":"pause","ms":1800},{"action":"shot","name":"menu"}]}

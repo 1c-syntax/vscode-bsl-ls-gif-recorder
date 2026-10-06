@@ -1,0 +1,4 @@
+{ "name":"signatureHelp-07-overload","feature":"signatureHelp","title":"Метод с переменным числом аргументов (необязательные параметры)","titleEn":"Method with a variable number of arguments (optional parameters)",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"sig-ovl.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура Демо()\n\t\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"Позиция = СтрНайти(\"abc-def\", \"-\", ","delay":80},{"action":"key","key":"Control+Shift+Space"},{"action":"pause","ms":2200},{"action":"shot","name":"sighelp"},{"action":"key","key":"Escape"}]}

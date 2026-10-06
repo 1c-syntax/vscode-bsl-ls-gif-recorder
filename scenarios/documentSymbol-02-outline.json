@@ -1,0 +1,3 @@
+{ "name":"documentSymbol-02-outline","feature":"documentSymbol","title":"Дерево символов в панели Структура (Outline)","titleEn":"Symbol tree in the Outline view",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"demo.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"command","text":"Outline: Focus on Outline View","waitMs":2200},{"action":"pause","ms":1200},{"action":"shot","name":"outline"}]}

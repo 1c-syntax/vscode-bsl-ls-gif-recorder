@@ -1,0 +1,3 @@
+{ "name":"01-global-functions","feature":"completion","title":"Автодополнение глобальных функций по префиксу","titleEn":"Global functions by prefix",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-global.bsl","content":"Процедура Демонстрация()\n\t\nКонецПроцедуры\n","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"Сообщ","delay":180},{"action":"suggest"},{"action":"pause","ms":1500},{"action":"shot","name":"popup"},{"action":"key","key":"ArrowDown","times":2,"gapMs":900},{"action":"pause","ms":1200}]}

@@ -1,0 +1,21 @@
+{
+  "name": "def-16-method-via-commonmodule-result",
+  "feature": "definition",
+  "title": "Переход к методу общего модуля, полученного через ОбщийМодуль()",
+  "titleEn": "Go to a common module method via the ОбщийМодуль() result",
+  "openQuery": "src/cf/CommonModules/РаботаСКурсамиВалют/Ext/Module.bsl",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 1100,
+  "steps": [
+    { "action": "goto", "line": 545, "column": 5 },
+    { "action": "pause", "ms": 2000 },
+    { "action": "shot", "name": "assignment" },
+    { "action": "goto", "line": 547, "column": 52 },
+    { "action": "pause", "ms": 1500 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 3500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

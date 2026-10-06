@@ -1,0 +1,3 @@
+{ "name":"documentSymbol-01","feature":"documentSymbol","title":"Структура документа (символы)","titleEn":"Document symbols",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"demo.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"key","key":"Control+Shift+KeyO"},{"action":"pause","ms":1500},{"action":"shot","name":"symbols"}]}

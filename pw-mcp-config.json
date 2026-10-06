@@ -1,0 +1,18 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "headless": false,
+      "args": ["--no-sandbox"]
+    },
+    "contextOptions": {
+      "viewport": { "width": 1280, "height": 720 },
+      "recordVideo": {
+        "dir": "./videos",
+        "size": { "width": 1280, "height": 720 }
+      }
+    }
+  },
+  "outputDir": "./output"
+}

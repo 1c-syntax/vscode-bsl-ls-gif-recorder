@@ -1,0 +1,18 @@
+{
+  "name": "def-06-cross-module",
+  "feature": "definition",
+  "title": "Переход к другому общему модулю (между файлами)",
+  "titleEn": "Go to another common module (cross-file)",
+  "openQuery": "src/cf/CommonModules/РаботаСКурсамиВалют/Ext/Module.bsl",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 1100,
+  "steps": [
+    { "action": "goto", "line": 803, "column": 10 },
+    { "action": "pause", "ms": 1500 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 3500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

@@ -1,0 +1,4 @@
+{ "name":"codeLens-05-complexity-toggle","feature":"codeLens","title":"CodeLens: счётчики сложности по клику","titleEn":"CodeLens: complexity counters on click",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"complexity.bsl","fixture":"complexity.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура РассчитатьСкидку(Клиент, Сумма) Экспорт\n\tЕсли Сумма > 1000 Тогда\n\t\tСкидка = 10;\n\tИначеЕсли Сумма > 500 Тогда\n\t\tСкидка = 5;\n\tИначе\n\t\tСкидка = 0;\n\tКонецЕсли;\n\tДля Каждого Заказ Из Клиент.Заказы Цикл\n\t\tЕсли Заказ.Оплачен Тогда\n\t\t\tСкидка = Скидка + 1;\n\t\tКонецЕсли;\n\tКонецЦикла;\n\tВозврат Скидка;\nКонецПроцедуры\n",
+  "steps":[{"action":"pause","ms":1800},{"action":"shot","name":"before"},{"action":"click","text":"Когнитивная сложность","waitMs":2000},{"action":"pause","ms":1500},{"action":"shot","name":"counters"}]}

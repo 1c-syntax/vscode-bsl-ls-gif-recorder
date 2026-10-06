@@ -1,0 +1,3 @@
+{ "name":"documentLink-02-diagnostic-code","feature":"documentLink","title":"documentLink: ссылка на документацию диагностики","titleEn":"documentLink: link to diagnostic documentation",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"doclink.bsl","warmupMs":90000,"fps":12,"width":1100,"leadSec":0.4,
+  "steps":[{"action":"documentLink","linkText":"256","shot":"link","maxMs":3000},{"action":"pause","ms":600}]}

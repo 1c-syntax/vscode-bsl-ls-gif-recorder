@@ -1,0 +1,4 @@
+{ "name":"semanticTokens-03-bsldoc","feature":"semanticTokens","title":"Семантическая подсветка комментария-документации (BSLDoc)","titleEn":"BSLDoc comment semantic highlighting",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"semantic-doc.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"// Рассчитывает скидку для заказа.\n//\n// Параметры:\n//  Заказ - Структура - данные заказа:\n//   * Сумма - Число - сумма заказа\n//   * Клиент - СправочникСсылка.Клиенты - клиент\n//  Процент - Число - процент скидки\n//\n// Возвращаемое значение:\n//  Число - сумма скидки\nФункция РассчитатьСкидку(Заказ, Процент) Экспорт\n\tВозврат Заказ.Сумма * Процент / 100;\nКонецФункции\n",
+  "steps":[{"action":"goto","line":3,"column":1},{"action":"pause","ms":2200},{"action":"shot","name":"bsldoc"}]}

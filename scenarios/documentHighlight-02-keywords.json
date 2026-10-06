@@ -1,0 +1,3 @@
+{ "name":"documentHighlight-02-keywords","feature":"documentHighlight","title":"Подсветка парных ключевых слов конструкции","titleEn":"Matching keyword highlighting",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"keywords.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"goto","line":2,"column":4},{"action":"pause","ms":2000},{"action":"shot","name":"highlight"}]}

@@ -1,0 +1,3 @@
+{ "name":"signatureHelp-02-variadic","feature":"signatureHelp","title":"Подсказка по параметрам конструктора (Новый Массив)","titleEn":"Signature help for a constructor (New Array)",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"sig-arr.bsl","content":"Процедура Демо()\n\t\nКонецПроцедуры\n","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"Список = Новый Массив(","delay":120},{"action":"pause","ms":1800},{"action":"shot","name":"sighelp"},{"action":"key","key":"Escape"}]}

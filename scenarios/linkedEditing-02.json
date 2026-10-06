@@ -1,0 +1,10 @@
+{ "name":"linkedEditing-02","feature":"linkedEditing","title":"Связанное редактирование параметра метода","titleEn":"Linked editing of a method parameter",
+  "fixture":"linkededit-param.bsl","workspace":"/home/coder/project/bsl-demo","openQuery":"linkededit-param.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура ОбработатьЗаказ(Заказ)\n\tЗаказ = Заказ + 1;\n\tСообщить(Заказ);\nКонецПроцедуры\n",
+  "steps":[
+    {"action":"goto","line":2,"column":4},{"action":"pause","ms":700},
+    {"action":"doubleClick","waitMs":1200},
+    {"action":"key","key":"ArrowRight"},{"action":"pause","ms":1200},{"action":"shot","name":"before"},
+    {"action":"type","text":"Покупателя","delay":90},{"action":"pause","ms":2600},{"action":"shot","name":"after"},
+    {"action":"pause","ms":900}
+  ]}

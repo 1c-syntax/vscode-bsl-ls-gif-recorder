@@ -1,0 +1,3 @@
+{ "name":"workspaceSymbol-04-fuzzy","feature":"workspaceSymbol","title":"Поиск символов: нечёткий по аббревиатуре","titleEn":"Workspace symbol search: fuzzy abbreviation",
+  "openQuery":"src/cf/CommonModules/ОбщегоНазначения/Ext/Module.bsl","warmupMs":180000,"fps":12,"width":1100,
+  "steps":[{"action":"key","key":"Control+KeyT"},{"action":"pause","ms":1000},{"action":"type","text":"ЗначРекО","delay":160},{"action":"pause","ms":2200},{"action":"shot","name":"symbols"}]}

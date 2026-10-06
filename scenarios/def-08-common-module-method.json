@@ -1,0 +1,18 @@
+{
+  "name": "def-08-common-module-method",
+  "feature": "definition",
+  "title": "Переход к методу общего модуля (между файлами)",
+  "titleEn": "Go to a common module method (cross-file)",
+  "openQuery": "src/cf/CommonModules/РаботаСКурсамиВалют/Ext/Module.bsl",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 1100,
+  "steps": [
+    { "action": "goto", "line": 803, "column": 30 },
+    { "action": "pause", "ms": 1500 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 3500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

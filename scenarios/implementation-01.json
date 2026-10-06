@@ -1,0 +1,7 @@
+{ "name":"implementation-01","feature":"implementation","title":"Переход к реализациям интерфейса","titleEn":"Go to implementations",
+  "workspace":"/home/coder/project/oscript-demo","openQuery":"Плавающее.os","warmupMs":120000,"fps":12,"width":1100,
+  "steps":[{"action":"pause","ms":1200},
+    {"action":"goto","line":7,"column":12},
+    {"action":"pause","ms":600},
+    {"action":"command","text":"Go to Implementations","waitMs":2600},
+    {"action":"pause","ms":1600},{"action":"shot","name":"impl"}]}

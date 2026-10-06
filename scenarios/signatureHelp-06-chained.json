@@ -1,0 +1,4 @@
+{ "name":"signatureHelp-06-chained","feature":"signatureHelp","title":"Подсказка по цепочке вызовов","titleEn":"Signature help across a call chain",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"sig-chain.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура Демо()\n\tТаблица = Новый ТаблицаЗначений;\n\t\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":3},{"action":"type","text":"Строка = Таблица.Скопировать().Найти(","delay":75},{"action":"key","key":"Control+Shift+Space"},{"action":"pause","ms":2200},{"action":"shot","name":"sighelp"},{"action":"key","key":"Escape"}]}

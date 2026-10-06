@@ -1,0 +1,4 @@
+{ "name":"comp-14-struct-insert","feature":"completion","title":"Поля структуры, добавленные через Вставить()","titleEn":"Structure fields added via Insert()",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-struct-ins.bsl","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "content":"Процедура СформироватьЗапись()\n\tЗапись = Новый Структура;\n\tЗапись.Вставить(\"Имя\", \"Иван\");\n\tЗапись.Вставить(\"Возраст\", 30);\n\t\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":5},{"action":"type","text":"Запись.","delay":160},{"action":"waitSuggest","maxMs":10000},{"action":"pause","ms":2000},{"action":"shot","name":"popup"}]}

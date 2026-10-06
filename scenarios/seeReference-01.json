@@ -1,0 +1,17 @@
+{ "name":"seeReference-01","feature":"documentLink",
+  "title":"documentLink: кликабельная ссылка «См.» на метод",
+  "titleEn":"documentLink: clickable «See» reference to a method",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"seeref.bsl","warmupMs":90000,
+  "fps":12,"width":1100,"leadSec":0.6,
+  "steps":[
+    {"action":"goto","line":1,"column":14},
+    {"action":"pause","ms":1000},
+    {"action":"shot","name":"before"},
+    {"action":"documentLink","linkText":"ВычислитьИтог","shot":"link","maxMs":3000},
+    {"action":"pause","ms":800},
+    {"action":"goto","line":1,"column":14},
+    {"action":"pause","ms":400},
+    {"action":"ctrlClick","waitMs":2500},
+    {"action":"pause","ms":1200},
+    {"action":"shot","name":"after"}
+  ]}

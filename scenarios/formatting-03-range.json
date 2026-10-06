@@ -1,0 +1,9 @@
+{ "name":"formatting-03-range","feature":"formatting","title":"Форматирование выделенного диапазона","titleEn":"Format selection (ranges formatting)",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"range.bsl","fixture":"range.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура ОбработатьЗаказ(Заказ)\nЕсли Заказ.Сумма > 1000 Тогда\nСкидка = Заказ.Сумма * 0.1;\nЗаказ.Итог = Заказ.Сумма - Скидка;\nКонецЕсли;\nСообщить(Заказ.Итог);\nКонецПроцедуры\n",
+  "steps":[{"action":"pause","ms":1200},{"action":"shot","name":"before"},
+    {"action":"goto","line":2,"column":1},
+    {"action":"key","key":"Shift+ArrowDown","times":4,"gapMs":200},
+    {"action":"pause","ms":600},
+    {"action":"command","text":"Format Selection","waitMs":2200},
+    {"action":"pause","ms":900},{"action":"shot","name":"after"}]}

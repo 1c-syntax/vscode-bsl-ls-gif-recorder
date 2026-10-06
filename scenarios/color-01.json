@@ -1,0 +1,3 @@
+{ "name":"color-01","feature":"color","title":"Образец цвета и выбор цвета","titleEn":"Color decorator and picker",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"demo.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"goto","line":27,"column":19},{"action":"pause","ms":1500},{"action":"shot","name":"swatch"}]}

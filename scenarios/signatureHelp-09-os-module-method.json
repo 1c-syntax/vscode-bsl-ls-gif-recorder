@@ -1,0 +1,4 @@
+{ "name":"signatureHelp-09-os-module-method","feature":"signatureHelp","title":"OneScript: подсказка по методу модуля библиотеки","titleEn":"OneScript: signature help for a library module method",
+  "workspace":"/home/coder/project/oscript-demo","fixture":"src/sig-os-mod.os","openQuery":"src/sig-os-mod.os","warmupMs":120000,"fps":12,"width":1100,
+  "content":"#Использовать demolib\n\nПроцедура Демо()\n\t\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":4},{"action":"type","text":"Текст = СтроковыеУтилиты.ВыполнитьФорматирование(","delay":70},{"action":"key","key":"Control+Shift+Space"},{"action":"pause","ms":2200},{"action":"shot","name":"sighelp"},{"action":"key","key":"Escape"}]}

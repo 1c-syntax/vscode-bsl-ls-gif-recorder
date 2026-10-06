@@ -1,0 +1,3 @@
+{ "name":"hover-08-common-module","feature":"hover","title":"Всплывающая документация общего модуля","titleEn":"Hover on a common module",
+  "openQuery":"src/cf/CommonModules/РаботаСКурсамиВалют/Ext/Module.bsl","warmupMs":180000,"fps":12,"width":1100,
+  "steps":[{"action":"goto","line":803,"column":10},{"action":"pause","ms":700},{"action":"hover","maxMs":8000,"shot":"hover","settleMs":1800},{"action":"pause","ms":5200}]}

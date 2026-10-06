@@ -1,0 +1,21 @@
+{
+  "name": "vscode-bsl-ls-gif-recorder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scenario-driven GIF recorder for BSL Language Server features in browser VS Code (code-server + Playwright)",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "record": "node record.mjs",
+    "session": "node record-session.mjs",
+    "docs": "node build-doc.mjs",
+    "html": "node build-html.mjs",
+    "pdf": "node build-pdf.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.60.0"
+  }
+}

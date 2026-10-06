@@ -1,0 +1,3 @@
+{ "name":"comp-04-local-variable","feature":"completion","title":"Автодополнение локальных переменных","titleEn":"Local variable completion",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-loc.bsl","content":"Процедура Демонстрация()\n\tКоличествоСтрок = 10;\n\tСуммаПродаж = 0;\n\t\nКонецПроцедуры\n","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":4},{"action":"type","text":"Сумм","delay":180},{"action":"suggest"},{"action":"pause","ms":1500},{"action":"shot","name":"popup"}]}

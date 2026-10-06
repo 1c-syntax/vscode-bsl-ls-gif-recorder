@@ -1,0 +1,7 @@
+{ "name":"typeHierarchy-01","feature":"typeHierarchy","title":"Иерархия типов","titleEn":"Type hierarchy",
+  "workspace":"/home/coder/project/oscript-demo","openQuery":"Млекопитающее.os","warmupMs":120000,"fps":12,"width":1100,
+  "steps":[{"action":"pause","ms":1200},
+    {"action":"goto","line":7,"column":5},
+    {"action":"pause","ms":600},
+    {"action":"command","text":"Show Type Hierarchy","waitMs":2600},
+    {"action":"pause","ms":1600},{"action":"shot","name":"hierarchy"}]}

@@ -1,0 +1,4 @@
+{ "name":"signatureHelp-10-os-instance-method","feature":"signatureHelp","title":"OneScript: подсказка по методу экземпляра класса","titleEn":"OneScript: signature help for an instance method",
+  "workspace":"/home/coder/project/oscript-demo","fixture":"src/sig-os-inst.os","openQuery":"src/sig-os-inst.os","warmupMs":120000,"fps":12,"width":1100,
+  "content":"#Использовать demolib\n\nПроцедура Демо()\n\tОтчет = Новый ФорматировщикОтчета(\"Итоги\");\n\t\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":5},{"action":"type","text":"Отчет.ДобавитьПоказатель(","delay":80},{"action":"key","key":"Control+Shift+Space"},{"action":"pause","ms":2200},{"action":"shot","name":"sighelp"},{"action":"key","key":"Escape"}]}

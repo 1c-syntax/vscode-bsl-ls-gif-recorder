@@ -1,0 +1,3 @@
+{ "name":"comp-17-predefined-items","feature":"completion","title":"Автодополнение предопределённых элементов справочника","titleEn":"Predefined catalog items",
+  "fixture":"comp-predef.bsl","content":"Процедура Демонстрация()\n\t\nКонецПроцедуры\n","warmupMs":180000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"Справочники.ВидыКонтактнойИнформации.","delay":60},{"action":"waitSuggest","maxMs":12000},{"action":"pause","ms":2200},{"action":"shot","name":"popup"}]}

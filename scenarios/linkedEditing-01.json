@@ -1,0 +1,10 @@
+{ "name":"linkedEditing-01","feature":"linkedEditing","title":"Связанное редактирование вхождений локальной переменной","titleEn":"Linked editing of a local variable's occurrences",
+  "fixture":"linkededit.bsl","workspace":"/home/coder/project/bsl-demo","openQuery":"linkededit.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура Пример()\n\tСчётчик = 0;\n\tСчётчик = Счётчик + 1;\n\tСообщить(Счётчик);\nКонецПроцедуры\n",
+  "steps":[
+    {"action":"goto","line":2,"column":5},{"action":"pause","ms":700},
+    {"action":"doubleClick","waitMs":1200},
+    {"action":"key","key":"ArrowRight"},{"action":"pause","ms":1200},{"action":"shot","name":"before"},
+    {"action":"type","text":"Цикла","delay":90},{"action":"pause","ms":2600},{"action":"shot","name":"after"},
+    {"action":"pause","ms":900}
+  ]}

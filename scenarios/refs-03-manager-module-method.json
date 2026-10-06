@@ -1,0 +1,3 @@
+{ "name":"refs-03-manager-module-method","feature":"references","title":"Использования метода модуля менеджера по всей конфигурации","titleEn":"Find all usages of a manager module method across the configuration",
+  "openQuery":"src/cf/CommonModules/УправлениеДоступомСлужебныйПовтИсп/Ext/Module.bsl","warmupMs":180000,"fps":12,"width":1100,
+  "steps":[{"action":"goto","line":46,"column":48},{"action":"pause","ms":1500},{"action":"shot","name":"usage"},{"action":"key","key":"Shift+F12"},{"action":"pause","ms":3500},{"action":"shot","name":"references"}]}

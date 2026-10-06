@@ -1,0 +1,4 @@
+{ "name":"formatting-01","feature":"formatting","title":"Форматирование документа","titleEn":"Document formatting",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"messy.bsl","fixture":"messy.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура РассчитатьИтог(Список) Экспорт\nСумма = 0;\nДля Каждого Элемент Из Список Цикл\nЕсли Элемент > 0 Тогда\nСумма = Сумма + Элемент;\nКонецЕсли;\nКонецЦикла;\nСообщить(Сумма);\nКонецПроцедуры\n",
+  "steps":[{"action":"pause","ms":1200},{"action":"shot","name":"before"},{"action":"command","text":"Format Document","waitMs":2200},{"action":"pause","ms":800},{"action":"shot","name":"after"}]}

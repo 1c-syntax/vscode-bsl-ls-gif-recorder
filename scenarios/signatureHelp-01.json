@@ -1,0 +1,11 @@
+{ "name":"signatureHelp-01","feature":"signatureHelp","title":"Подсказка по параметрам метода","titleEn":"Parameter hints while calling",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"demo.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[
+    {"action":"goto","line":19,"column":1},
+    {"action":"key","key":"End"},
+    {"action":"key","key":"Enter"},
+    {"action":"type","text":"Сумма = Сложить(","delay":110},
+    {"action":"pause","ms":1800},
+    {"action":"shot","name":"sighelp"},
+    {"action":"key","key":"Escape"}
+  ]}

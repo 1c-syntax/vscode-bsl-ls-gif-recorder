@@ -1,0 +1,10 @@
+{ "name":"callHierarchy-01","feature":"callHierarchy","title":"Иерархия вызовов: входящие и исходящие","titleEn":"Call hierarchy: incoming and outgoing",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"callgraph.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[
+    {"action":"goto","line":15,"column":20},{"action":"pause","ms":800},
+    {"action":"key","key":"Shift+Alt+KeyH"},{"action":"pause","ms":2500},{"action":"shot","name":"incoming"},
+    {"action":"key","key":"ArrowDown"},{"action":"key","key":"ArrowRight"},{"action":"pause","ms":1200},{"action":"shot","name":"incoming-expanded"},
+    {"action":"key","key":"ArrowUp","times":2,"gapMs":300},
+    {"action":"click","aria":"Show Outgoing Calls","waitMs":2000},{"action":"pause","ms":800},{"action":"shot","name":"outgoing"},
+    {"action":"key","key":"ArrowDown"},{"action":"key","key":"ArrowRight"},{"action":"pause","ms":1200},{"action":"shot","name":"outgoing-expanded"}
+  ]}

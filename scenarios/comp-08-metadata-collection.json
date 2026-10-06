@@ -1,0 +1,3 @@
+{ "name":"comp-08-metadata-collection","feature":"completion","title":"Автодополнение коллекций метаданных (Справочники.)","titleEn":"Metadata collections (Catalogs.)",
+  "fixture":"comp-md.bsl","content":"Процедура Демонстрация()\n\t\nКонецПроцедуры\n","warmupMs":180000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"Справочники.","delay":110},{"action":"waitSuggest","maxMs":12000},{"action":"pause","ms":2000},{"action":"shot","name":"popup"}]}

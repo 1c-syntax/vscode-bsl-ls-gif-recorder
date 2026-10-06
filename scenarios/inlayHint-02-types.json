@@ -1,0 +1,4 @@
+{ "name":"inlayHint-02-types","feature":"inlayHint","title":"Подсказки-вставки (выведенные типы переменных)","titleEn":"Inlay hints (inferred variable types)",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"intype.bsl","fixture":"intype.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура ДемоТипов()\n\tТаблица = Новый ТаблицаЗначений();\n\tКолонки = Таблица.Колонки;\n\tСтрока = Таблица.Добавить();\n\tВсегоСтрок = Таблица.Количество();\nКонецПроцедуры\n",
+  "steps":[{"action":"goto","line":2,"column":1},{"action":"pause","ms":2600},{"action":"shot","name":"types"}]}

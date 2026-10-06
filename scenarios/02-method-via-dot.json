@@ -1,0 +1,49 @@
+{
+    "name": "02-method-via-dot",
+    "feature": "completion",
+    "title": "Автодополнение методов объекта через точку (вывод типа после «Новый»)",
+    "titleEn": "Object methods via dot (type inferred from New)",
+    "workspace": "/home/coder/project/bsl-demo",
+    "fixture": "comp-method.bsl",
+    "content": "Процедура Демонстрация()\n\tСписок = Новый Массив;\n\t\nКонецПроцедуры\n",
+    "warmupMs": 90000,
+    "expectSuggest": true,
+    "fps": 12,
+    "width": 1100,
+    "steps": [
+        {
+            "action": "lineEnd",
+            "line": 3
+        },
+        {
+            "action": "type",
+            "text": "Список.",
+            "delay": 200
+        },
+        {
+            "action": "waitSuggest",
+            "maxMs": 8000
+        },
+        {
+            "action": "pause",
+            "ms": 2000
+        },
+        {
+            "action": "shot",
+            "name": "popup"
+        },
+        {
+            "action": "type",
+            "text": "Доб",
+            "delay": 220
+        },
+        {
+            "action": "pause",
+            "ms": 1500
+        },
+        {
+            "action": "shot",
+            "name": "filtered"
+        }
+    ]
+}

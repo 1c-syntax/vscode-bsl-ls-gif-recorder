@@ -1,0 +1,3 @@
+{ "name":"signatureHelp-04-platform","feature":"signatureHelp","title":"Подсказка по параметрам платформенного метода","titleEn":"Signature help for a platform method",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"sig-plat.bsl","content":"Процедура Демо()\n\tСписок = Новый Массив;\n\t\nКонецПроцедуры\n","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":3},{"action":"type","text":"Список.Добавить(","delay":120},{"action":"pause","ms":1800},{"action":"shot","name":"sighelp"},{"action":"key","key":"Escape"}]}

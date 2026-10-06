@@ -1,0 +1,8 @@
+{
+  "$schema": "https://1c-syntax.github.io/bsl-language-server/dev/configuration/schema.json",
+  "language": "ru",
+  "configurationRoot": "./src/cf",
+  "v8platform": {
+    "binPath": "/home/coder/v8bin"
+  }
+}

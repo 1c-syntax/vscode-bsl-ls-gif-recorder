@@ -1,0 +1,26 @@
+{
+ "workspace": "/home/coder/project/oscript-demo",
+ "warmupMs": 120000,
+ "scenarios": [
+  "def-10-oscript-module",
+  "def-11-oscript-class-no-constructor",
+  "def-12-oscript-class-with-constructor",
+  "def-13-oscript-module-method",
+  "def-14-oscript-instance-method",
+  "def-15-oscript-annotation",
+  "comp-10-os-new-library-class",
+  "comp-11-os-module-members",
+  "hover-04-oscript-constructor",
+  "signatureHelp-08-os-constructor",
+  "signatureHelp-09-os-module-method",
+  "signatureHelp-10-os-instance-method",
+  "hover-09-os-annotation",
+  "comp-12-os-use-required",
+  "implementation-01",
+  "typeHierarchy-01",
+  "codeLens-02-autumn-injection",
+  "codeLens-03-autumn-usages",
+  "codeLens-04-run-tests",
+  "comp-18-fuzzy"
+ ]
+}

@@ -1,0 +1,3 @@
+{ "name":"comp-06-collection-members","feature":"completion","title":"Автодополнение членов коллекции (ТаблицаЗначений)","titleEn":"Collection members (ValueTable)",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-tz.bsl","content":"Процедура Демонстрация()\n\tТаблица = Новый ТаблицаЗначений;\n\t\nКонецПроцедуры\n","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":3},{"action":"type","text":"Таблица.","delay":200},{"action":"waitSuggest","maxMs":8000},{"action":"pause","ms":2000},{"action":"shot","name":"popup"}]}

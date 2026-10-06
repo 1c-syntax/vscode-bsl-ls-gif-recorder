@@ -1,0 +1,4 @@
+{ "name":"documentSymbol-03-deprecated","feature":"documentSymbol","title":"Устаревший метод зачёркнут в структуре","titleEn":"Deprecated method struck through in the outline",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"depr.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"// Устарела.\n// Используйте вместо неё РассчитатьСумму().\n//\nПроцедура ПосчитатьИтог() Экспорт\nКонецПроцедуры\n\n// Рассчитывает сумму заказа.\nПроцедура РассчитатьСумму() Экспорт\nКонецПроцедуры\n",
+  "steps":[{"action":"command","text":"Outline: Focus on Outline View","waitMs":2000},{"action":"pause","ms":1500},{"action":"shot","name":"outline"}]}

@@ -1,0 +1,12 @@
+{ "name":"formatting-02-ontype","feature":"formatting","title":"Форматирование при вводе (отступы на лету)","titleEn":"On-type formatting (indentation as you type)",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"ontype.bsl","openQuery":"ontype.bsl","warmupMs":90000,"fps":12,"width":1100,"content":"",
+  "steps":[
+    {"action":"type","text":"Процедура ПроверитьЗначение(Знач)","delay":35},{"action":"key","key":"Escape"},{"action":"key","key":"Enter"},
+    {"action":"type","text":"Если Знач > 100 Тогда","delay":35},{"action":"key","key":"Escape"},{"action":"key","key":"Enter"},
+    {"action":"type","text":"Сообщить(\"Большое\");","delay":35},{"action":"key","key":"Escape"},{"action":"key","key":"Enter"},
+    {"action":"type","text":"Иначе","delay":35},{"action":"key","key":"Escape"},{"action":"key","key":"Enter"},
+    {"action":"type","text":"Сообщить(\"Малое\");","delay":35},{"action":"key","key":"Escape"},{"action":"key","key":"Enter"},
+    {"action":"type","text":"КонецЕсли;","delay":35},{"action":"key","key":"Escape"},{"action":"key","key":"Enter"},
+    {"action":"type","text":"КонецПроцедуры","delay":35},{"action":"key","key":"Escape"},
+    {"action":"pause","ms":1200},{"action":"shot","name":"typed"}
+  ]}

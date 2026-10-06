@@ -1,0 +1,12 @@
+{
+  "$schema": "https://1c-syntax.github.io/bsl-language-server/dev/configuration/schema.json",
+  "language": "ru",
+  "codeLens": {
+    "testRunner": {
+      "getTestsByTestRunner": false,
+      "executable": "echo",
+      "runTestArguments": "Запуск теста %2$s",
+      "runAllTestsArguments": "Запуск всех тестов модуля"
+    }
+  }
+}

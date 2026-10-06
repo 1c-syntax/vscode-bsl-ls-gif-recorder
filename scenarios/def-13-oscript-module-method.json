@@ -1,0 +1,19 @@
+{
+  "name": "def-13-oscript-module-method",
+  "feature": "definition",
+  "title": "Переход к методу модуля OneScript",
+  "titleEn": "Go to a OneScript module method",
+  "workspace": "/home/coder/project/oscript-demo",
+  "openQuery": "src/demo.os",
+  "warmupMs": 90000,
+  "fps": 12,
+  "width": 1100,
+  "steps": [
+    { "action": "goto", "line": 6, "column": 30 },
+    { "action": "pause", "ms": 1500 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 3500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

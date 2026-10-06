@@ -1,0 +1,4 @@
+{ "name":"hover-06-struct-field","feature":"hover","title":"Тип переменной из поля структуры","titleEn":"Variable type inferred from a structure field",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"hov-fieldvar.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"// Параметры:\n//  Заказ - Структура - Данные заказа:\n//   * Номер - Строка - номер заказа\n//   * Сумма - Число - сумма заказа\nПроцедура ОбработатьЗаказ(Заказ) Экспорт\n\tНомерЗаказа = Заказ.Номер;\n\tСообщить(НомерЗаказа);\nКонецПроцедуры\n",
+  "steps":[{"action":"goto","line":6,"column":6},{"action":"pause","ms":700},{"action":"hover","maxMs":8000,"shot":"hover","settleMs":1800},{"action":"pause","ms":5200}]}

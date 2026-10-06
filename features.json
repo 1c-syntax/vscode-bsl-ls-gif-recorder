@@ -1,0 +1,278 @@
+{
+ "completion": {
+  "order": 10,
+  "shortcut": "Ctrl+Space",
+  "ru": {
+   "title": "Автодополнение кода",
+   "desc": "Контекстные подсказки по мере ввода: глобальные функции, методы и свойства объектов (с выводом типа), типы после оператора `Новый`, ключевые слова и локальные переменные."
+  },
+  "en": {
+   "title": "Code completion",
+   "desc": "Context-aware suggestions as you type: global functions, object methods and properties (with type inference), types after the `New` operator, keywords and local variables."
+  }
+ },
+ "definition": {
+  "order": 20,
+  "shortcut": "F12 / Ctrl+Click (просмотр: Alt+F12)",
+  "ru": {
+   "title": "Переход к определению",
+   "desc": "Переход к объявлению процедуры, функции, переменной или метода из места использования. Работает внутри модуля и между модулями конфигурации."
+  },
+  "en": {
+   "title": "Go to definition",
+   "desc": "Jump from a usage to the declaration of a procedure, function, variable or method. Works within a module and across configuration modules."
+  }
+ },
+ "implementation": {
+  "order": 25,
+  "shortcut": "Ctrl+F12",
+  "ru": {
+   "title": "Переход к реализациям",
+   "desc": "Для классов OneScript, использующих библиотеку наследования `extends`: переход от метода интерфейса (`&Интерфейс`) ко всем одноимённым методам реализующих его классов (`&Реализует`)."
+  },
+  "en": {
+   "title": "Go to implementations",
+   "desc": "For OneScript classes using the `extends` inheritance library: jump from an interface method (`&Интерфейс`) to the same-named methods in every implementing class (`&Реализует`)."
+  }
+ },
+ "references": {
+  "order": 30,
+  "shortcut": "Shift+F12",
+  "ru": {
+   "title": "Поиск использований",
+   "desc": "Поиск всех мест использования символа по проекту."
+  },
+  "en": {
+   "title": "Find references",
+   "desc": "Find all usages of a symbol across the project."
+  }
+ },
+ "hover": {
+  "order": 40,
+  "shortcut": "наведение мыши",
+  "ru": {
+   "title": "Всплывающая документация",
+   "desc": "При наведении на символ показывает сигнатуру, тип и описание из комментариев."
+  },
+  "en": {
+   "title": "Quick documentation (hover)",
+   "desc": "Hovering over a symbol shows its signature, type and the description from doc comments."
+  }
+ },
+ "signatureHelp": {
+  "order": 50,
+  "shortcut": "Ctrl+Shift+Space",
+  "ru": {
+   "title": "Подсказка по параметрам",
+   "desc": "При вводе вызова метода показывает список параметров и подсвечивает текущий."
+  },
+  "en": {
+   "title": "Signature help",
+   "desc": "While typing a method call, shows the parameter list and highlights the active parameter."
+  }
+ },
+ "diagnostics": {
+  "order": 60,
+  "shortcut": "Ctrl+Shift+M (панель Проблемы)",
+  "ru": {
+   "title": "Диагностики",
+   "desc": "Подсветка ошибок, потенциальных проблем и нарушений стандартов прямо в коде и в панели Проблемы."
+  },
+  "en": {
+   "title": "Diagnostics",
+   "desc": "Highlights errors, potential issues and coding-standard violations inline and in the Problems panel."
+  }
+ },
+ "codeAction": {
+  "order": 70,
+  "shortcut": "Ctrl+.",
+  "ru": {
+   "title": "Быстрые исправления",
+   "desc": "Предлагает автоматические исправления диагностик и рефакторинги по сочетанию клавиш у проблемного места."
+  },
+  "en": {
+   "title": "Code actions / Quick fixes",
+   "desc": "Offers automatic fixes for diagnostics and refactorings via a shortcut at the problem location."
+  }
+ },
+ "formatting": {
+  "order": 80,
+  "shortcut": "Shift+Alt+F",
+  "ru": {
+   "title": "Форматирование",
+   "desc": "Форматирование всего документа, выделенного фрагмента и по мере набора (отступы, регистр ключевых слов)."
+  },
+  "en": {
+   "title": "Formatting",
+   "desc": "Format the whole document, a selection, or on-the-fly while typing (indentation, keyword casing)."
+  }
+ },
+ "rename": {
+  "order": 90,
+  "shortcut": "F2",
+  "ru": {
+   "title": "Переименование",
+   "desc": "Безопасное переименование символа со всеми его использованиями."
+  },
+  "en": {
+   "title": "Rename",
+   "desc": "Safely rename a symbol together with all its usages."
+  }
+ },
+ "linkedEditing": {
+  "order": 95,
+  "shortcut": "автоматически",
+  "ru": {
+   "title": "Связанное редактирование",
+   "desc": "Редактирование объявления локального символа (переменной, параметра) одновременно изменяет все его вхождения в модуле — без вызова переименования."
+  },
+  "en": {
+   "title": "Linked editing",
+   "desc": "Editing the declaration of a local symbol (variable, parameter) updates all of its occurrences in the module at once — without invoking rename."
+  }
+ },
+ "documentSymbol": {
+  "order": 100,
+  "shortcut": "Ctrl+Shift+O",
+  "ru": {
+   "title": "Структура документа",
+   "desc": "Дерево процедур, функций и областей модуля — в панели Структура и в быстром переходе."
+  },
+  "en": {
+   "title": "Document symbols / Outline",
+   "desc": "A tree of the module's procedures, functions and regions — in the Outline view and quick navigation."
+  }
+ },
+ "workspaceSymbol": {
+  "order": 110,
+  "shortcut": "Ctrl+T",
+  "ru": {
+   "title": "Поиск символов по проекту",
+   "desc": "Быстрый переход к любому методу или объекту во всём проекте по имени."
+  },
+  "en": {
+   "title": "Workspace symbols",
+   "desc": "Quickly jump to any method or object across the whole project by name."
+  }
+ },
+ "documentHighlight": {
+  "order": 120,
+  "shortcut": "автоматически",
+  "ru": {
+   "title": "Подсветка вхождений",
+   "desc": "Подсветка всех вхождений символа под курсором, а также парных ключевых слов конструкции (Если…КонецЕсли и т.п.)."
+  },
+  "en": {
+   "title": "Document highlight",
+   "desc": "Placing the cursor on a symbol highlights all its occurrences in the current module."
+  }
+ },
+ "callHierarchy": {
+  "order": 130,
+  "shortcut": "Shift+Alt+H",
+  "ru": {
+   "title": "Иерархия вызовов",
+   "desc": "Кто вызывает метод и кого вызывает он — в виде разворачиваемого дерева."
+  },
+  "en": {
+   "title": "Call hierarchy",
+   "desc": "Who calls a method and what it calls — as an expandable tree."
+  }
+ },
+ "typeHierarchy": {
+  "order": 135,
+  "shortcut": "Показать иерархию типов (контекстное меню)",
+  "ru": {
+   "title": "Иерархия типов",
+   "desc": "Для классов OneScript, использующих библиотеку наследования `extends`: дерево супертипов и подтипов по аннотациям `&Расширяет` и `&Реализует`."
+  },
+  "en": {
+   "title": "Type hierarchy",
+   "desc": "For OneScript classes using the `extends` inheritance library: a tree of supertypes and subtypes derived from the `&Расширяет` and `&Реализует` annotations."
+  }
+ },
+ "folding": {
+  "order": 140,
+  "shortcut": "Ctrl+Shift+[ / ]",
+  "ru": {
+   "title": "Сворачивание кода",
+   "desc": "Сворачивание процедур, функций, областей и блоков для удобной навигации."
+  },
+  "en": {
+   "title": "Code folding",
+   "desc": "Collapse procedures, functions, regions and blocks for easier navigation."
+  }
+ },
+ "selectionRange": {
+  "order": 150,
+  "shortcut": "Shift+Alt+→ / ←",
+  "ru": {
+   "title": "Умное выделение",
+   "desc": "Пошаговое расширение и сужение выделения по синтаксическим границам."
+  },
+  "en": {
+   "title": "Smart selection",
+   "desc": "Expand and shrink the selection step by step along syntactic boundaries."
+  }
+ },
+ "semanticTokens": {
+  "order": 160,
+  "shortcut": "автоматически",
+  "ru": {
+   "title": "Семантическая подсветка",
+   "desc": "Точная подсветка на основе разбора кода: переменные, параметры, методы, аннотации, а также язык запросов (SDBL) внутри строк."
+  },
+  "en": {
+   "title": "Semantic highlighting",
+   "desc": "Accurate highlighting based on code analysis: distinguishes variables, parameters, methods and annotations."
+  }
+ },
+ "inlayHint": {
+  "order": 170,
+  "shortcut": "автоматически",
+  "ru": {
+   "title": "Подсказки-вставки",
+   "desc": "Встроенные в код подсказки — например, имена параметров в вызовах."
+  },
+  "en": {
+   "title": "Inlay hints",
+   "desc": "Inline hints embedded in the code — for example, parameter names at call sites."
+  }
+ },
+ "codeLens": {
+  "order": 180,
+  "shortcut": "автоматически",
+  "ru": {
+   "title": "Код-линзы",
+   "desc": "Информационные строки над процедурами: когнитивная и цикломатическая сложность, запуск тестов и покрытие."
+  },
+  "en": {
+   "title": "Code lens",
+   "desc": "Informational lines above procedures: cognitive and cyclomatic complexity, test run and coverage."
+  }
+ },
+ "color": {
+  "order": 190,
+  "shortcut": "автоматически (клик по образцу — палитра)",
+  "ru": {
+   "title": "Цвета: превью и палитра",
+   "desc": "Превью цвета для `Новый Цвет(...)` и `WebЦвета.*`. Клик по образцу открывает палитру — выбор цвета обновляет код. Для веб-цветов доступна конвертация в RGB-представление (`Новый Цвет`) и обратно."
+  },
+  "en": {
+   "title": "Colors: preview and picker",
+   "desc": "Color preview for `Новый Цвет(...)` and `WebЦвета.*`. Clicking the swatch opens the picker — choosing a color updates the code. Web colors convert to/from the RGB constructor representation."
+  }
+ },
+ "documentLink": {
+  "order": 200,
+  "shortcut": "Ctrl+клик по ссылке",
+  "ru": {
+   "title": "Гиперссылки в коде",
+   "desc": "Кликабельные ссылки прямо в тексте модуля: ссылки `См.`/`See` в документирующих комментариях ведут к упомянутому методу или объекту; URL в комментариях открываются в браузере; а опционально (по умолчанию **выключено**, `documentLink.showDiagnosticDescription`) сам диагностируемый фрагмент становится ссылкой на документацию диагностики."
+  },
+  "en": {
+   "title": "Document links (hyperlinks)",
+   "desc": "Clickable links right in the module text: `См.`/`See` references in doc comments jump to the mentioned method or object; URLs in comments open in the browser; and optionally (**off by default**, `documentLink.showDiagnosticDescription`) the diagnosed range itself becomes a link to the diagnostic's documentation."
+  }
+ }
+}

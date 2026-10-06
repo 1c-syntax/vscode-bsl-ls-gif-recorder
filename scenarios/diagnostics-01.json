@@ -1,0 +1,7 @@
+{ "name":"diagnostics-01","feature":"diagnostics","title":"Диагностики и панель Проблемы","titleEn":"Diagnostics and the Problems panel",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"demo.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[
+    {"action":"goto","line":19,"column":6},{"action":"pause","ms":800},
+    {"action":"key","key":"Control+Shift+KeyM"},{"action":"pause","ms":2000},{"action":"shot","name":"problems"},
+    {"action":"key","key":"Control+Shift+KeyM"}
+  ]}

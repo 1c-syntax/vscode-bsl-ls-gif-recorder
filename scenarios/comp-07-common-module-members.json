@@ -1,0 +1,3 @@
+{ "name":"comp-07-common-module-members","feature":"completion","title":"Автодополнение методов общего модуля","titleEn":"Common module methods",
+  "fixture":"comp-cm.bsl","content":"Процедура Демонстрация()\n\t\nКонецПроцедуры\n","warmupMs":180000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"ОбщегоНазначения","delay":90},{"action":"key","key":"Escape","gapMs":300},{"action":"type","text":".Знач","delay":110},{"action":"waitSuggest","maxMs":12000},{"action":"pause","ms":2000},{"action":"shot","name":"popup"}]}

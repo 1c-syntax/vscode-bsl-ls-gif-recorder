@@ -1,0 +1,3 @@
+[submodule "vendor/ssl_3_2"]
+	path = vendor/ssl_3_2
+	url = https://github.com/1c-syntax/ssl_3_2

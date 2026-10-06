@@ -1,0 +1,3 @@
+{ "name":"signatureHelp-03-optional","feature":"signatureHelp","title":"Подсказка по параметрам: необязательный параметр","titleEn":"Signature help: optional parameter",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"sig-opt.bsl","content":"Функция Форматировать(Текст, Префикс = \"[]\") Экспорт\n\tВозврат Префикс + Текст;\nКонецФункции\n\nПроцедура Демо()\n\t\nКонецПроцедуры\n","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":6},{"action":"type","text":"Р = Форматировать(","delay":120},{"action":"pause","ms":1800},{"action":"shot","name":"sighelp"},{"action":"key","key":"Escape"}]}

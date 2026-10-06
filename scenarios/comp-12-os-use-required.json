@@ -1,0 +1,13 @@
+{ "name":"comp-12-os-use-required","feature":"completion","title":"OneScript: классы/модули библиотеки видны в автокомплите только при #Использовать (или в том же пакете)","titleEn":"OneScript: library classes/modules appear only with #Использовать (or within the same package)",
+  "workspace":"/home/coder/project/oscript-demo","fixture":"comp-use.os","content":"Процедура Демо()\n\tОбъект = Новый Форматир\nКонецПроцедуры\n","warmupMs":120000,"fps":10,"width":1100,
+  "steps":[
+    {"action":"goto","line":2,"column":24},
+    {"action":"key","key":"End"},
+    {"action":"suggest"},{"action":"pause","ms":1800},{"action":"shot","name":"without"},
+    {"action":"key","key":"Escape"},
+    {"action":"goto","line":1,"column":1},
+    {"action":"type","text":"#Использовать demolib","delay":60},{"action":"key","key":"Enter"},
+    {"action":"pause","ms":2500},
+    {"action":"goto","line":3,"column":24},{"action":"key","key":"End"},
+    {"action":"suggest"},{"action":"pause","ms":1800},{"action":"shot","name":"with"}
+  ]}

@@ -1,0 +1,4 @@
+{ "name":"comp-18-fuzzy","feature":"completion","title":"Нечёткое автодополнение (подстрока, не только префикс)","titleEn":"Fuzzy completion (substring, not just prefix)",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-fuzzy.bsl","openQuery":"comp-fuzzy.bsl","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "content":"Процедура Демонстрация()\n\t\nКонецПроцедуры\n\nФункция РассчитатьСуммуЗаказа() Экспорт\n\tВозврат 0;\nКонецФункции\n\nФункция ПроверитьСтатусЗаказа() Экспорт\n\tВозврат Истина;\nКонецФункции\n",
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"Зак","delay":160},{"action":"waitSuggest","maxMs":10000},{"action":"pause","ms":2200},{"action":"shot","name":"popup"}]}

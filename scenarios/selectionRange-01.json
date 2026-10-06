@@ -1,0 +1,7 @@
+{ "name":"selectionRange-01","feature":"selectionRange","title":"Умное расширение выделения: от подвыражения в Если до всего файла","titleEn":"Smart selection: from a sub-expression in If up to the whole file",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"selection.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[
+    {"action":"goto","line":2,"column":23},{"action":"pause","ms":1000},{"action":"shot","name":"start"},
+    {"action":"key","key":"Shift+Alt+ArrowRight","times":9,"gapMs":650},
+    {"action":"pause","ms":900},{"action":"shot","name":"expanded"}
+  ]}

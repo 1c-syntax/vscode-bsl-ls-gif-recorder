@@ -1,0 +1,9 @@
+{ "name":"folding-01","feature":"folding","title":"Сворачивание кода: комментарии, условия, пакеты запросов","titleEn":"Code folding: comments, conditionals, query batches",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"folding.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[
+    {"action":"pause","ms":1200},{"action":"shot","name":"before"},
+    {"action":"goto","line":3,"column":1},{"action":"key","key":"Control+Shift+BracketLeft"},{"action":"pause","ms":700},
+    {"action":"goto","line":8,"column":2},{"action":"key","key":"Control+Shift+BracketLeft"},{"action":"pause","ms":700},
+    {"action":"goto","line":20,"column":3},{"action":"key","key":"Control+Shift+BracketLeft"},{"action":"pause","ms":700},
+    {"action":"goto","line":1,"column":1},{"action":"pause","ms":600},{"action":"shot","name":"folded"}
+  ]}

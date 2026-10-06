@@ -1,0 +1,18 @@
+{
+  "name": "refs-02-local-variable",
+  "feature": "references",
+  "title": "Поиск использований локальной переменной (в пределах метода)",
+  "titleEn": "Find usages of a local variable (within a method)",
+  "openQuery": "src/cf/CommonModules/РаботаСКурсамиВалют/Ext/Module.bsl",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 1100,
+  "steps": [
+    { "action": "goto", "line": 547, "column": 27 },
+    { "action": "pause", "ms": 1500 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "Shift+F12" },
+    { "action": "pause", "ms": 3500 },
+    { "action": "shot", "name": "references" }
+  ]
+}

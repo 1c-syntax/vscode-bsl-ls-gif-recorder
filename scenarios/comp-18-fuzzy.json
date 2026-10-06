@@ -1,0 +1,4 @@
+{ "name":"comp-18-fuzzy","feature":"completion","title":"Нечёткое автодополнение (подстрока, не только префикс)","titleEn":"Fuzzy completion (substring, not just prefix)",
+  "workspace":"/home/coder/project/oscript-demo","fixture":"comp-fuzzy.os","openQuery":"comp-fuzzy.os","warmupMs":120000,"expectSuggest":true,"fps":12,"width":1100,
+  "content":"#Использовать demolib\n\nПроцедура Демо()\n\t\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":4},{"action":"type","text":"СтроковыеУтилиты.Форм","delay":150},{"action":"waitSuggest","maxMs":10000},{"action":"pause","ms":2200},{"action":"shot","name":"popup"}]}

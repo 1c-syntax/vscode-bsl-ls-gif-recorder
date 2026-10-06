@@ -1,0 +1,19 @@
+{
+  "name": "def-15-oscript-annotation",
+  "feature": "definition",
+  "title": "Переход к зарегистрированной аннотации OneScript",
+  "titleEn": "Go to a registered OneScript annotation",
+  "workspace": "/home/coder/project/oscript-demo",
+  "openQuery": "src/demo-annotation.os",
+  "warmupMs": 90000,
+  "fps": 12,
+  "width": 1100,
+  "steps": [
+    { "action": "goto", "line": 4, "column": 7 },
+    { "action": "pause", "ms": 1500 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 3500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

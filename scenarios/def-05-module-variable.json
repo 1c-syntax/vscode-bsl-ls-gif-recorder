@@ -1,0 +1,19 @@
+{
+  "name": "def-05-module-variable",
+  "feature": "definition",
+  "title": "Переход к модульной переменной",
+  "titleEn": "Go to a module-level variable",
+  "fixture": "demo.bsl",
+  "content": "Перем НастройкиМодуля Экспорт;\n\nПроцедура Тест()\n\tНастройкиМодуля = Новый Структура;\nКонецПроцедуры\n",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 960,
+  "steps": [
+    { "action": "goto", "line": 4, "column": 6 },
+    { "action": "pause", "ms": 1200 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 2500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

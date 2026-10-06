@@ -1,0 +1,4 @@
+{ "name":"hover-07-inferred-type","feature":"hover","title":"Вывод типа переменной из выражения","titleEn":"Variable type inferred from an expression",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"hov-inferred.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Процедура Демо()\n\tМассив = Новый Массив;\n\tКоличество = Массив.Количество();\n\tСообщить(Количество);\nКонецПроцедуры\n",
+  "steps":[{"action":"goto","line":3,"column":5},{"action":"pause","ms":700},{"action":"hover","maxMs":8000,"shot":"type","settleMs":2000},{"action":"pause","ms":5200}]}

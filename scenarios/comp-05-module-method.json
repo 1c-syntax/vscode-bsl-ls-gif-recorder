@@ -1,0 +1,3 @@
+{ "name":"comp-05-module-method","feature":"completion","title":"Автодополнение процедур и функций модуля","titleEn":"Module procedures and functions",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-mod.bsl","content":"Функция ВычислитьИтог(Сумма) Экспорт\n\tВозврат Сумма * 1.2;\nКонецФункции\n\nПроцедура Демонстрация()\n\t\nКонецПроцедуры\n","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":6},{"action":"type","text":"Вычисл","delay":180},{"action":"suggest"},{"action":"pause","ms":1500},{"action":"shot","name":"popup"}]}

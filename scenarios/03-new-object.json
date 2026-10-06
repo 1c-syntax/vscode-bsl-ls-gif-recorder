@@ -1,0 +1,3 @@
+{ "name":"03-new-object","feature":"completion","title":"Автодополнение типов после оператора Новый","titleEn":"Types after the New operator",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-new.bsl","content":"Процедура Демонстрация()\n\tОбъект = \nКонецПроцедуры\n","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "steps":[{"action":"lineEnd","line":2},{"action":"type","text":"Новый Масс","delay":170},{"action":"suggest"},{"action":"pause","ms":2000},{"action":"shot","name":"popup"}]}

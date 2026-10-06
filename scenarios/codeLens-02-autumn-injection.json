@@ -1,0 +1,4 @@
+{ "name":"codeLens-02-autumn-injection","feature":"codeLens","title":"CodeLens: переход к определению желудя (Autumn DI)","titleEn":"CodeLens: navigate to bean definition (Autumn DI)",
+  "workspace":"/home/coder/project/oscript-demo","openQuery":"consumer-di.os","warmupMs":120000,"fps":12,"width":1100,
+  "steps":[{"action":"goto","line":4,"column":1},{"action":"pause","ms":2800},{"action":"shot","name":"lens"},
+    {"action":"click","text":"перейти к определению","waitMs":2800},{"action":"pause","ms":2000},{"action":"shot","name":"navigated"}]}

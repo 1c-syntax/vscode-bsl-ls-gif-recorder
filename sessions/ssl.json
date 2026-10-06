@@ -1,0 +1,27 @@
+{
+ "workspace": "/home/coder/project",
+ "warmupMs": 180000,
+ "scenarios": [
+  "def-01-procedure",
+  "def-02-function",
+  "def-03-local-variable",
+  "def-05-module-variable",
+  "def-06-cross-module",
+  "def-07-peek",
+  "def-08-common-module-method",
+  "def-09-manager-module-method",
+  "def-16-method-via-commonmodule-result",
+  "refs-01-method-cross-module",
+  "refs-02-local-variable",
+  "workspaceSymbol-01",
+  "comp-08-metadata-collection",
+  "comp-09-enum-values",
+  "comp-07-common-module-members",
+  "refs-03-manager-module-method",
+  "hover-08-common-module",
+  "comp-17-predefined-items",
+  "workspaceSymbol-02-camelhumps",
+  "workspaceSymbol-03-substring",
+  "workspaceSymbol-04-fuzzy"
+ ]
+}

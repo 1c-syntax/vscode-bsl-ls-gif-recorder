@@ -1,0 +1,4 @@
+{ "name":"comp-15-struct-combo","feature":"completion","title":"Поля структуры: описание + расширение через Вставить()","titleEn":"Structure fields: description + dynamic Insert()",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-struct-combo.bsl","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "content":"// Параметры:\n//  Заказ - Структура - Данные заказа:\n//   * Номер - Строка - номер заказа\n//   * Сумма - Число - сумма заказа\nПроцедура ОбработатьЗаказ(Заказ) Экспорт\n\tЗаказ.Вставить(\"Скидка\", 0);\n\t\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":7},{"action":"type","text":"Заказ.","delay":160},{"action":"waitSuggest","maxMs":10000},{"action":"pause","ms":2000},{"action":"shot","name":"popup"}]}

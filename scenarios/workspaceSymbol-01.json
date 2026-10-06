@@ -1,0 +1,3 @@
+{ "name":"workspaceSymbol-01","feature":"workspaceSymbol","title":"Поиск символа по всему проекту","titleEn":"Workspace symbol search",
+  "openQuery":"src/cf/CommonModules/РаботаСКурсамиВалют/Ext/Module.bsl","warmupMs":180000,"fps":12,"width":1100,
+  "steps":[{"action":"key","key":"Control+KeyT"},{"action":"pause","ms":1000},{"action":"type","text":"КурсВалюты","delay":90},{"action":"pause","ms":1800},{"action":"shot","name":"symbols"}]}

@@ -1,0 +1,370 @@
+{
+ "01-global-functions": {
+  "ru": "После ввода `Сообщ` внутри процедуры срабатывает автодополнение по префиксу. Во всплывающем списке предлагаются глобальные функции, начинающиеся на эту строку, в том числе `Сообщить`.",
+  "en": "After typing `Сообщ` inside the procedure, prefix-based completion is triggered. The popup lists global functions starting with that string, including `Сообщить`."
+ },
+ "02-method-via-dot": {
+  "ru": "Тип переменной `Список` выведен из присваивания `Новый Массив`, и после ввода `Список.` всплывает список методов массива. Набор `Доб` фильтрует список до метода `Добавить`.",
+  "en": "The type of `Список` is inferred from the `Новый Массив` assignment, and typing `Список.` pops up the array's methods. Typing `Доб` filters the list down to the `Добавить` method."
+ },
+ "03-new-object": {
+  "ru": "После ввода `Новый Масс` срабатывает автодополнение типов платформы. В списке предлагаются классы, начинающиеся на `Масс` (например `Массив`), а у выделенного класса показана сигнатура конструктора с числом вариантов синтаксиса.",
+  "en": "After typing `Новый Масс`, type completion is triggered. The list offers classes starting with `Масс` (e.g. `Массив`), and the highlighted class shows its constructor signature with the number of syntax variants."
+ },
+ "comp-04-local-variable": {
+  "ru": "Внутри процедуры объявлены переменные `КоличествоСтрок` и `СуммаПродаж`, и после ввода `Сумм` срабатывает автодополнение. Во всплывающем списке предлагается локальная переменная `СуммаПродаж`.",
+  "en": "Two local variables `КоличествоСтрок` and `СуммаПродаж` are declared in the procedure, and typing `Сумм` triggers completion. The popup offers the local variable `СуммаПродаж`."
+ },
+ "comp-05-module-method": {
+  "ru": "После ввода `Вычисл` в теле процедуры срабатывает автодополнение методов текущего модуля. В списке предлагается функция `ВычислитьИтог` с её сигнатурой и описанием.",
+  "en": "After typing `Вычисл` in the procedure body, completion of the current module's methods is triggered. The list offers the `ВычислитьИтог` function with its signature and description."
+ },
+ "comp-06-collection-members": {
+  "ru": "Тип переменной `Таблица` выведен из `Новый ТаблицаЗначений`, и после ввода `Таблица.` всплывает список её членов. В подсказке предлагаются свойства и методы таблицы значений, такие как `Колонки` и `Добавить`.",
+  "en": "The type of `Таблица` is inferred from `Новый ТаблицаЗначений`, and typing `Таблица.` pops up its members. The popup offers the value table's properties and methods such as `Колонки` and `Добавить`."
+ },
+ "comp-07-common-module-members": {
+  "ru": "После ввода `ОбщегоНазначения.Знач` срабатывает автодополнение членов общего модуля конфигурации. В списке предлагаются экспортные методы модуля (например `ЗначениеРеквизитаОбъекта`) с их сигнатурами и типами возвращаемого значения.",
+  "en": "After typing `ОбщегоНазначения.Знач`, completion of the common module's members is triggered. The list offers the module's exported methods (e.g. `ЗначениеРеквизитаОбъекта`) with their signatures and return types."
+ },
+ "comp-08-metadata-collection": {
+  "ru": "После ввода `Справочники.` срабатывает автодополнение коллекции объектов метаданных. В списке предлагаются справочники конфигурации вместе с методами менеджера.",
+  "en": "After typing `Справочники.`, completion of the metadata object collection is triggered. The list offers the configuration's catalogs along with manager methods."
+ },
+ "comp-09-enum-values": {
+  "ru": "После ввода `Перечисления.ВажностьПроблемыУчета.` срабатывает автодополнение членов менеджера перечисления. В списке предлагаются значения самого перечисления вместе с методами менеджера.",
+  "en": "After typing `Перечисления.ВажностьПроблемыУчета.`, completion of the enumeration manager's members is triggered. The list offers the enumeration's own values together with the manager's methods."
+ },
+ "comp-10-os-new-library-class": {
+  "ru": "В OneScript-модуле с `#Использовать demolib` после ввода `Новый Форматир` срабатывает автодополнение классов подключённой библиотеки. В списке предлагаются классы библиотеки, начинающиеся на этот префикс.",
+  "en": "In a OneScript module with `#Использовать demolib`, typing `Новый Форматир` triggers completion of the imported library's classes. The list offers the library classes starting with that prefix."
+ },
+ "comp-11-os-module-members": {
+  "ru": "В OneScript-модуле с `#Использовать demolib` после ввода `СтроковыеУтилиты.` срабатывает автодополнение членов модуля библиотеки. В списке предлагаются экспортные методы модуля `СтроковыеУтилиты`.",
+  "en": "In a OneScript module with `#Использовать demolib`, typing `СтроковыеУтилиты.` triggers completion of the library module's members. The list offers the exported methods of the `СтроковыеУтилиты` module."
+ },
+ "comp-12-os-use-required": {
+  "ru": "Сначала автодополнение после `Новый Форматир` без `#Использовать` ничего из библиотеки не предлагает, затем в начало файла добавляется директива `#Использовать demolib`. После этого тот же ввод вызывает автодополнение классов и модулей библиотеки.",
+  "en": "First, completion after `Новый Форматир` without `#Использовать` offers nothing from the library, then the `#Использовать demolib` directive is added at the top of the file. After that the same input triggers completion of the library's classes and modules."
+ },
+ "comp-13-struct-doc": {
+  "ru": "Параметр `Заказ` описан в BSLDoc-комментарии как структура с полями `Номер` и `Сумма`, и после ввода `Заказ.` срабатывает автодополнение. В списке предлагаются поля структуры с типами и описанием, взятыми из комментария.",
+  "en": "The `Заказ` parameter is described in a BSLDoc comment as a structure with fields `Номер` and `Сумма`, and typing `Заказ.` triggers completion. The list offers the structure fields with the types and descriptions taken from the comment."
+ },
+ "comp-14-struct-insert": {
+  "ru": "В структуру `Запись` поля добавлены вызовами `Вставить(\"Имя\", …)` и `Вставить(\"Возраст\", …)`, и после ввода `Запись.` срабатывает автодополнение. В списке предлагаются поля `Имя` и `Возраст`, выведенные из этих вызовов.",
+  "en": "Fields are added to the `Запись` structure via `Вставить(\"Имя\", …)` and `Вставить(\"Возраст\", …)`, and typing `Запись.` triggers completion. The list offers the fields `Имя` and `Возраст` inferred from those calls."
+ },
+ "comp-15-struct-combo": {
+  "ru": "Структура `Заказ` описана в BSLDoc-комментарии полями `Номер` и `Сумма`, а в теле процедуры дополнена вызовом `Вставить(\"Скидка\", 0)`. После ввода `Заказ.` автодополнение предлагает и поля из описания, и динамически добавленное поле `Скидка`.",
+  "en": "The `Заказ` structure is described in a BSLDoc comment with fields `Номер` and `Сумма`, and is extended in the body by `Вставить(\"Скидка\", 0)`. After typing `Заказ.`, completion offers both the documented fields and the dynamically added `Скидка` field."
+ },
+ "comp-16-valuetable-columns": {
+  "ru": "В цикле `Для Каждого Строка Из Таблица` после ввода `Строка.` срабатывает автодополнение колонок строки таблицы значений. В списке предлагаются колонки `Артикул` и `Цена`, добавленные ранее через `Колонки.Добавить`.",
+  "en": "Inside the `Для Каждого Строка Из Таблица` loop, typing `Строка.` triggers completion of the value table row's columns. The list offers the columns `Артикул` and `Цена` added earlier via `Колонки.Добавить`."
+ },
+ "comp-17-predefined-items": {
+  "ru": "После ввода `Справочники.ВидыКонтактнойИнформации.` срабатывает автодополнение членов менеджера справочника. В списке предлагаются предопределённые элементы справочника наряду с методами менеджера.",
+  "en": "After typing `Справочники.ВидыКонтактнойИнформации.`, completion of the catalog manager's members is triggered. The list offers the catalog's predefined items alongside the manager's methods."
+ },
+ "hover-01-method": {
+  "ru": "Курсор наводится на вызов метода в коде модуля. Всплывающая подсказка показывает сигнатуру метода и его описание из документирующего комментария.",
+  "en": "The cursor hovers over a method call in the module code. The popup shows the method's signature and its description from the doc comment."
+ },
+ "hover-02-variable": {
+  "ru": "Курсор наводится на переменную в коде модуля. Всплывающая подсказка показывает имя переменной и выведенный тип её значения.",
+  "en": "The cursor hovers over a variable in the module code. The popup shows the variable name and the inferred type of its value."
+ },
+ "hover-03-platform-method": {
+  "ru": "Курсор наводится на платформенную функцию `СтрДлина` в коде. Всплывающая подсказка показывает её сигнатуру, тип возвращаемого значения и описание из документации платформы.",
+  "en": "The cursor hovers over the platform function `СтрДлина` in the code. The popup shows its signature, return type and description from the platform documentation."
+ },
+ "hover-04-oscript-constructor": {
+  "ru": "Курсор наводится на конструктор класса OneScript в выражении `Новый`. Всплывающая подсказка показывает сигнатуру конструктора и описание класса.",
+  "en": "The cursor hovers over a OneScript class constructor in a `Новый` expression. The popup shows the constructor's signature and the class description."
+ },
+ "hover-05-keyword": {
+  "ru": "Курсор наводится на ключевое слово языка в коде модуля. Всплывающая подсказка показывает описание этого ключевого слова.",
+  "en": "The cursor hovers over a language keyword in the module code. The popup shows the description of that keyword."
+ },
+ "hover-06-struct-field": {
+  "ru": "Курсор наводится на переменную `НомерЗаказа`, которой присвоено `Заказ.Номер`. Всплывающая подсказка показывает тип `Строка`, выведенный из описания поля структуры в BSLDoc-комментарии.",
+  "en": "The cursor hovers over the variable `НомерЗаказа`, assigned from `Заказ.Номер`. The popup shows the type `Строка`, inferred from the structure field's description in the BSLDoc comment."
+ },
+ "hover-07-inferred-type": {
+  "ru": "Курсор наводится на переменную `Количество`, которой присвоен результат `Массив.Количество()`. Всплывающая подсказка показывает тип `Число`, выведенный из этого выражения.",
+  "en": "The cursor hovers over the variable `Количество`, assigned the result of `Массив.Количество()`. The popup shows the type `Число`, inferred from that expression."
+ },
+ "hover-08-common-module": {
+  "ru": "Курсор наводится на имя общего модуля в коде. Всплывающая подсказка показывает имя общего модуля и его описание.",
+  "en": "The cursor hovers over a common module name in the code. The popup shows the common module's name and its description."
+ },
+ "hover-09-os-annotation": {
+  "ru": "Курсор наводится на использование аннотации `&Кэшировать` в OneScript-модуле. Всплывающая подсказка показывает описание этой аннотации.",
+  "en": "The cursor hovers over a usage of the `&Кэшировать` annotation in a OneScript module. The popup shows the description of that annotation."
+ },
+ "signatureHelp-01": {
+  "ru": "Пользователь набирает вызов локальной функции `Сумма = Сложить(` и доходит до открывающей скобки. Поверх кода всплывает панель сигнатуры со списком параметров метода `Сложить`, в которой подсвечен активный первый параметр.",
+  "en": "The user types a call to the local function `Сумма = Сложить(` up to the opening parenthesis. A signature panel pops up over the code listing the parameters of `Сложить`, with the active first parameter highlighted."
+ },
+ "signatureHelp-02-variadic": {
+  "ru": "Пользователь набирает конструктор `Список = Новый Массив(` и доходит до открывающей скобки. Всплывает панель сигнатуры конструктора `Массив` со списком его параметров и подсветкой активного параметра.",
+  "en": "The user types the constructor `Список = Новый Массив(` up to the opening parenthesis. A signature panel appears for the `Массив` constructor, listing its parameters with the active one highlighted."
+ },
+ "signatureHelp-03-optional": {
+  "ru": "Пользователь набирает вызов функции `Р = Форматировать(` с необязательным параметром `Префикс = \"[]\"`. Панель сигнатуры показывает оба параметра, отмечая `Префикс` как необязательный (со значением по умолчанию) и подсвечивая активный параметр.",
+  "en": "The user types a call to `Р = Форматировать(`, whose `Префикс = \"[]\"` parameter is optional. The signature panel shows both parameters, marking `Префикс` as optional (with its default value) and highlighting the active parameter."
+ },
+ "signatureHelp-04-platform": {
+  "ru": "Пользователь обращается к платформенному методу `Список.Добавить(` у переменной типа `Массив`. Панель сигнатуры показывает параметры платформенного метода `Добавить` с подсветкой активного параметра.",
+  "en": "The user invokes the platform method `Список.Добавить(` on a variable of type `Массив`. The signature panel shows the parameters of the platform method `Добавить`, highlighting the active parameter."
+ },
+ "signatureHelp-05-nested": {
+  "ru": "Пользователь набирает вложенный вызов `Сообщить(Сложить(10, ` и переходит ко второму аргументу внутренней функции. Панель сигнатуры показывает параметры именно внутреннего вызова `Сложить` и подсвечивает активный второй параметр.",
+  "en": "The user types a nested call `Сообщить(Сложить(10, ` and moves to the second argument of the inner function. The signature panel shows the parameters of the inner `Сложить` call and highlights the active second parameter."
+ },
+ "signatureHelp-06-chained": {
+  "ru": "Пользователь набирает цепочку вызовов `Строка = Таблица.Скопировать().Найти(` и вызывает подсказку по параметрам. Панель сигнатуры определяет тип результата `Скопировать()` и показывает параметры метода `Найти` с подсветкой активного параметра.",
+  "en": "The user types a call chain `Строка = Таблица.Скопировать().Найти(` and triggers signature help. The panel resolves the result type of `Скопировать()` and shows the parameters of `Найти`, highlighting the active parameter."
+ },
+ "signatureHelp-07-overload": {
+  "ru": "Пользователь набирает вызов `Позиция = СтрНайти(\"abc-def\", \"-\", ` и переходит к третьему аргументу метода с переменным числом аргументов. Панель сигнатуры показывает все параметры `СтрНайти`, в том числе необязательные, и подсвечивает активный третий параметр.",
+  "en": "The user types `Позиция = СтрНайти(\"abc-def\", \"-\", ` and moves to the third argument of this variable-arity method. The signature panel lists all parameters of `СтрНайти`, including the optional ones, and highlights the active third parameter."
+ },
+ "signatureHelp-08-os-constructor": {
+  "ru": "В файле OneScript с `#Использовать demolib` пользователь набирает `Отчет = Новый ФорматировщикОтчета(` и вызывает подсказку по параметрам. Панель сигнатуры показывает параметры конструктора класса библиотеки `ФорматировщикОтчета` с подсветкой активного параметра.",
+  "en": "In a OneScript file with `#Использовать demolib`, the user types `Отчет = Новый ФорматировщикОтчета(` and triggers signature help. The panel shows the constructor parameters of the library class `ФорматировщикОтчета`, highlighting the active parameter."
+ },
+ "signatureHelp-09-os-module-method": {
+  "ru": "В файле OneScript пользователь обращается к методу модуля библиотеки `СтроковыеУтилиты.ВыполнитьФорматирование(` и вызывает подсказку по параметрам. Панель сигнатуры показывает параметры метода модуля `ВыполнитьФорматирование` с подсветкой активного параметра.",
+  "en": "In a OneScript file, the user calls the library module method `СтроковыеУтилиты.ВыполнитьФорматирование(` and triggers signature help. The panel shows the parameters of the module method `ВыполнитьФорматирование`, highlighting the active parameter."
+ },
+ "signatureHelp-10-os-instance-method": {
+  "ru": "Пользователь вызывает метод экземпляра `Отчет.ДобавитьПоказатель(` у объекта класса `ФорматировщикОтчета`. Панель сигнатуры определяет тип экземпляра и показывает параметры метода `ДобавитьПоказатель` с подсветкой активного параметра.",
+  "en": "The user calls the instance method `Отчет.ДобавитьПоказатель(` on an object of class `ФорматировщикОтчета`. The signature panel resolves the instance type and shows the parameters of `ДобавитьПоказатель`, highlighting the active parameter."
+ },
+ "def-01-procedure": {
+  "ru": "Пользователь ставит курсор на вызов процедуры `ВывестиПриветствие()` и нажимает F12. Редактор переходит к строке объявления `Процедура ВывестиПриветствие()` в том же модуле.",
+  "en": "The user places the cursor on the call `ВывестиПриветствие()` and presses F12. The editor jumps to the `Процедура ВывестиПриветствие()` declaration line in the same module."
+ },
+ "def-02-function": {
+  "ru": "Пользователь ставит курсор на вызов функции `Сложить(2, 3)` и нажимает F12. Редактор переходит к строке объявления `Функция Сложить(Знач Первое, Знач Второе) Экспорт` в том же модуле.",
+  "en": "The user places the cursor on the call `Сложить(2, 3)` and presses F12. The editor jumps to the `Функция Сложить(Знач Первое, Знач Второе) Экспорт` declaration line in the same module."
+ },
+ "def-03-local-variable": {
+  "ru": "Пользователь ставит курсор на использование локальной переменной `Счётчик` и нажимает F12. Редактор переходит к её объявлению `Перем Счётчик;` внутри той же процедуры.",
+  "en": "The user places the cursor on a usage of the local variable `Счётчик` and presses F12. The editor jumps to its declaration `Перем Счётчик;` inside the same procedure."
+ },
+ "def-05-module-variable": {
+  "ru": "Пользователь ставит курсор на использование модульной переменной `НастройкиМодуля` внутри процедуры и нажимает F12. Редактор переходит к её объявлению на уровне модуля `Перем НастройкиМодуля Экспорт;`.",
+  "en": "The user places the cursor on a usage of the module-level variable `НастройкиМодуля` inside a procedure and presses F12. The editor jumps to its module-level declaration `Перем НастройкиМодуля Экспорт;`."
+ },
+ "def-06-cross-module": {
+  "ru": "Пользователь ставит курсор на имя общего модуля в составном вызове и нажимает F12. Редактор открывает файл `Module.bsl` другого общего модуля и переходит к нему между файлами конфигурации.",
+  "en": "The user places the cursor on the common module name in a qualified call and presses F12. The editor opens the `Module.bsl` of another common module and navigates to it across configuration files."
+ },
+ "def-07-peek": {
+  "ru": "Пользователь ставит курсор на вызов `ВывестиПриветствие()` и нажимает Alt+F12 для просмотра определения. Определение процедуры открывается во встроенном окне Peek прямо под строкой вызова, без перехода в другое место.",
+  "en": "The user places the cursor on the call `ВывестиПриветствие()` and presses Alt+F12 to peek the definition. The procedure's definition opens in an inline Peek window right below the call line, without navigating away."
+ },
+ "def-08-common-module-method": {
+  "ru": "Пользователь ставит курсор на имя метода в вызове другого общего модуля и нажимает F12. Редактор открывает `Module.bsl` целевого общего модуля и переходит к объявлению этого метода между файлами.",
+  "en": "The user places the cursor on the method name in a call to another common module and presses F12. The editor opens the target common module's `Module.bsl` and navigates to that method's declaration across files."
+ },
+ "def-09-manager-module-method": {
+  "ru": "Пользователь ставит курсор на имя метода модуля менеджера в вызове и нажимает F12. Редактор открывает модуль менеджера соответствующего объекта метаданных и переходит к объявлению метода между файлами.",
+  "en": "The user places the cursor on a manager module method name in a call and presses F12. The editor opens the manager module of the corresponding metadata object and navigates to the method's declaration across files."
+ },
+ "def-10-oscript-module": {
+  "ru": "В файле `demo.os` пользователь ставит курсор на имя подключённого модуля OneScript и нажимает F12. Редактор открывает файл этого модуля библиотеки и переходит к нему.",
+  "en": "In `demo.os`, the user places the cursor on the name of an imported OneScript module and presses F12. The editor opens that library module's file and navigates to it."
+ },
+ "def-11-oscript-class-no-constructor": {
+  "ru": "В файле `demo.os` пользователь ставит курсор на имя класса OneScript без явного конструктора в выражении `Новый` и нажимает F12. Редактор открывает файл класса и переходит к его определению.",
+  "en": "In `demo.os`, the user places the cursor on the name of a OneScript class without an explicit constructor in a `Новый` expression and presses F12. The editor opens the class file and navigates to its definition."
+ },
+ "def-12-oscript-class-with-constructor": {
+  "ru": "В файле `demo.os` пользователь ставит курсор на имя класса OneScript в выражении `Новый` и нажимает F12. Редактор открывает файл класса и переходит к его явному конструктору `Процедура ПриСозданииОбъекта`.",
+  "en": "In `demo.os`, the user places the cursor on a OneScript class name in a `Новый` expression and presses F12. The editor opens the class file and navigates to its explicit `Процедура ПриСозданииОбъекта` constructor."
+ },
+ "def-13-oscript-module-method": {
+  "ru": "В файле `demo.os` пользователь ставит курсор на имя метода в вызове модуля OneScript и нажимает F12. Редактор открывает файл модуля и переходит к объявлению этого метода.",
+  "en": "In `demo.os`, the user places the cursor on a method name in a OneScript module call and presses F12. The editor opens the module file and navigates to that method's declaration."
+ },
+ "def-14-oscript-instance-method": {
+  "ru": "В файле `demo.os` пользователь ставит курсор на имя метода, вызываемого у экземпляра класса OneScript, и нажимает F12. Редактор определяет тип экземпляра, открывает файл класса и переходит к объявлению метода.",
+  "en": "In `demo.os`, the user places the cursor on a method called on a OneScript class instance and presses F12. The editor resolves the instance type, opens the class file and navigates to the method's declaration."
+ },
+ "def-15-oscript-annotation": {
+  "ru": "В файле `demo-annotation.os` пользователь ставит курсор на имя зарегистрированной аннотации OneScript и нажимает F12. Редактор переходит к месту, где эта аннотация объявлена.",
+  "en": "In `demo-annotation.os`, the user places the cursor on the name of a registered OneScript annotation and presses F12. The editor navigates to where that annotation is declared."
+ },
+ "def-16-method-via-commonmodule-result": {
+  "ru": "Пользователь работает с переменной, которой присвоен результат `ОбщийМодуль(\"...\")`, ставит курсор на вызываемый у неё метод и нажимает F12. Редактор определяет общий модуль по результату `ОбщийМодуль()`, открывает его `Module.bsl` и переходит к объявлению метода.",
+  "en": "The user works with a variable assigned the result of `ОбщийМодуль(\"...\")`, places the cursor on a method called on it and presses F12. The editor resolves the common module from the `ОбщийМодуль()` result, opens its `Module.bsl` and navigates to the method's declaration."
+ },
+ "diagnostics-01": {
+  "ru": "Пользователь открывает модуль `demo.bsl` и нажимает Ctrl+Shift+M, чтобы открыть панель Проблемы. Проблемные места подсвечены прямо в коде, а панель Проблемы перечисляет найденные диагностики с их описаниями.",
+  "en": "The user opens the `demo.bsl` module and presses Ctrl+Shift+M to open the Problems panel. The problematic spots are highlighted inline in the code, and the Problems panel lists the detected diagnostics with their descriptions."
+ },
+ "codeLens-01": {
+  "ru": "Курсор стоит на объявлении метода в `.bsl`-модуле, и над ним отображается линза CodeLens. В линзе показаны метрики метода — когнитивная и цикломатическая сложность.",
+  "en": "The cursor sits on a method declaration in a `.bsl` module, and a CodeLens line appears above it. The lens shows the method's metrics — cognitive and cyclomatic complexity."
+ },
+ "codeLens-02-autumn-injection": {
+  "ru": "В классе OneScript над точкой внедрения зависимости `&Пластилин` (Autumn DI) показана линза «перейти к определению», по которой выполняется клик. Редактор переходит к классу-желудю (`&Желудь`), предоставляющему внедряемую зависимость.",
+  "en": "In a OneScript class, a «go to definition» lens is shown above the `&Пластилин` Autumn DI injection point and gets clicked. The editor navigates to the bean class (`&Желудь`) that provides the injected dependency."
+ },
+ "codeLens-03-autumn-usages": {
+  "ru": "На объявлении класса-желудя `&Желудь` (Autumn DI) показана линза со счётчиком точек внедрения, по которой выполняется клик. Открывается peek-окно со списком всех мест, куда внедряется этот желудь.",
+  "en": "On a `&Желудь` bean class declaration (Autumn DI), a lens with the injection-points count is clicked. A peek window opens listing every place where this bean is injected."
+ },
+ "codeLens-04-run-tests": {
+  "ru": "Над `&Тест`-методами в модуле OneScript показаны линзы «Запустить тест» и «Запустить все тесты», и по одной из них выполняется клик. Открывается терминал, в котором выполняется команда тест-раннера.",
+  "en": "Above the `&Тест` methods in a OneScript module, «Run test» and «Run all tests» lenses are shown, and one of them is clicked. A terminal opens and executes the test-runner command."
+ },
+ "codeLens-05-complexity-toggle": {
+  "ru": "В коде `.bsl` выполняется клик по линзе «Когнитивная сложность» над методом. В тексте включаются inline-счётчики сложности: `+1` на ветвлениях и `+2 (nesting=1)` на вложенных конструкциях.",
+  "en": "In `.bsl` code, the «Cognitive complexity» lens above a method is clicked. Inline complexity counters appear in the code: `+1` on branches and `+2 (nesting=1)` on nested constructs."
+ },
+ "refs-01-method-cross-module": {
+  "ru": "Курсор ставится на объявление экспортного метода общего модуля, и нажимается `Shift+F12` (поиск использований). Открывается список всех вызовов этого метода по всей конфигурации, в разных модулях.",
+  "en": "The cursor is placed on a common-module export method declaration and `Shift+F12` (find references) is pressed. A list opens with every call to this method across the whole configuration, in different modules."
+ },
+ "refs-02-local-variable": {
+  "ru": "Курсор ставится на локальную переменную внутри метода, и нажимается `Shift+F12` (поиск использований). Открывается список вхождений переменной, ограниченный пределами этого метода.",
+  "en": "The cursor is placed on a local variable inside a method and `Shift+F12` (find references) is pressed. A list opens with the variable's occurrences, scoped to that single method."
+ },
+ "refs-03-manager-module-method": {
+  "ru": "Курсор ставится на метод модуля менеджера, и нажимается `Shift+F12` (поиск использований). Открывается список всех вызовов этого метода по всей конфигурации.",
+  "en": "The cursor is placed on a manager-module method and `Shift+F12` (find references) is pressed. A list opens with all calls to this method across the whole configuration."
+ },
+ "documentLink-02-diagnostic-code": {
+  "ru": "В сообщении диагностики код правила (`256`) подсвечен как кликабельная ссылка. Клик по нему открывает документацию этой диагностики.",
+  "en": "In a diagnostic message, the rule code (`256`) is highlighted as a clickable link. Clicking it opens the documentation for that diagnostic."
+ },
+ "seeReference-01": {
+  "ru": "В документирующем комментарии ссылка `См.` на метод `ВычислитьИтог` подсвечена как кликабельная. По `Ctrl+Click` редактор переходит к объявлению упомянутого метода.",
+  "en": "In a doc comment, the `См.` (See) reference to method `ВычислитьИтог` is highlighted as clickable. `Ctrl+Click` navigates the editor to the referenced method's declaration."
+ },
+ "documentSymbol-01": {
+  "ru": "В открытом `.bsl`-модуле нажимается `Ctrl+Shift+O` (быстрый переход по символам). Появляется дерево процедур, функций и областей модуля для навигации.",
+  "en": "In an open `.bsl` module, `Ctrl+Shift+O` (go to symbol) is pressed. A tree of the module's procedures, functions and regions appears for navigation."
+ },
+ "documentSymbol-02-outline": {
+  "ru": "Открывается панель Структура (Outline) для текущего `.bsl`-модуля. В ней отображается дерево процедур, функций и областей модуля.",
+  "en": "The Outline view is opened for the current `.bsl` module. It shows a tree of the module's procedures, functions and regions."
+ },
+ "documentSymbol-03-deprecated": {
+  "ru": "В панели Структура показан модуль с методом `ПосчитатьИтог`, помеченным как устаревший комментарием `// Устарела.`. Устаревший метод отображается зачёркнутым, в отличие от актуального `РассчитатьСумму`.",
+  "en": "The Outline view shows a module whose `ПосчитатьИтог` method is marked deprecated by a `// Устарела.` comment. The deprecated method is rendered struck through, unlike the current `РассчитатьСумму`."
+ },
+ "documentHighlight-01": {
+  "ru": "Курсор ставится на символ в коде (двойной клик по идентификатору). Все вхождения этого символа в текущем модуле подсвечиваются одновременно.",
+  "en": "The cursor is placed on a symbol in the code (double-click on the identifier). All occurrences of that symbol in the current module are highlighted at once."
+ },
+ "documentHighlight-02-keywords": {
+  "ru": "Курсор ставится на ключевое слово конструкции (`Если`). Подсвечиваются парные ключевые слова конструкции — `Если…КонецЕсли`.",
+  "en": "The cursor is placed on a construct keyword (`Если`). The matching pair of keywords is highlighted — `Если…КонецЕсли`."
+ },
+ "linkedEditing-01": {
+  "ru": "Курсор ставится внутрь объявления локальной переменной `Счётчик`, и к её имени дописываются символы. Без вызова переименования все вхождения переменной в модуле меняются одновременно по мере набора.",
+  "en": "The cursor is placed inside the declaration of the local variable `Счётчик` and characters are appended to its name. Without invoking rename, all occurrences of the variable in the module change simultaneously as you type."
+ },
+ "linkedEditing-02": {
+  "ru": "Курсор ставится внутрь имени параметра метода `Заказ`, и к нему дописываются символы. Без вызова переименования все вхождения параметра в теле метода меняются одновременно по мере набора.",
+  "en": "The cursor is placed inside the method parameter name `Заказ` and characters are appended to it. Without invoking rename, all occurrences of the parameter in the method body change simultaneously as you type."
+ },
+ "rename-01": {
+  "ru": "Курсор ставится на метод, нажимается `F2`, вводится новое имя `Суммировать` и подтверждается `Enter`. Метод и все его использования переименовываются одновременно.",
+  "en": "The cursor is placed on a method, `F2` is pressed, the new name `Суммировать` is typed and confirmed with `Enter`. The method and all of its usages are renamed at once."
+ },
+ "implementation-01": {
+  "ru": "На методе интерфейса класса OneScript (`&Интерфейс`, библиотека `extends`) вызывается «Go to Implementations». Открывается список реализаций — одноимённых методов в классах с аннотацией `&Реализует`.",
+  "en": "«Go to Implementations» is invoked on an interface method of a OneScript class (`&Интерфейс`, the `extends` library). A list of implementations opens — same-named methods in classes annotated with `&Реализует`."
+ },
+ "typeHierarchy-01": {
+  "ru": "На классе OneScript, использующем наследование `extends`, вызывается «Show Type Hierarchy». Открывается дерево иерархии типов — супертипы и подтипы класса.",
+  "en": "«Show Type Hierarchy» is invoked on a OneScript class that uses `extends` inheritance. A type-hierarchy tree opens — the class's supertypes and subtypes."
+ },
+ "callHierarchy-01": {
+  "ru": "Курсор ставится на метод и нажимается `Shift+Alt+H` (иерархия вызовов), затем дерево разворачивается и переключается между входящими и исходящими вызовами. Отображается разворачиваемое дерево: кто вызывает метод и кого вызывает он сам.",
+  "en": "The cursor is placed on a method and `Shift+Alt+H` (call hierarchy) is pressed, then the tree is expanded and toggled between incoming and outgoing calls. An expandable tree is shown: who calls the method and what it calls."
+ },
+ "semanticTokens-01": {
+  "ru": "Курсор стоит в открытом модуле `demo.bsl`, и редактор отображает код в обычном виде. Семантическая подсветка раскрашивает элементы по результатам разбора: переменные, параметры, имена методов и аннотации получают разные цвета.",
+  "en": "The cursor sits in the open `demo.bsl` module while the editor shows the code as usual. Semantic highlighting colors elements based on parsing: variables, parameters, method names and annotations each get distinct colors."
+ },
+ "semanticTokens-02-query": {
+  "ru": "В модуле `query.bsl` курсор переходит к строковому литералу, содержащему текст запроса. Встроенный язык запросов (SDBL) подсвечивается прямо внутри строки: ключевые слова (`ВЫБРАТЬ`, `ИЗ`, `ГДЕ`), таблицы и поля раскрашиваются как полноценный код.",
+  "en": "In the `query.bsl` module the cursor moves to a string literal that holds a query text. The embedded query language (SDBL) is highlighted right inside the string: keywords (`ВЫБРАТЬ`, `ИЗ`, `ГДЕ`), tables and fields are colored like real code."
+ },
+ "semanticTokens-03-bsldoc": {
+  "ru": "Курсор стоит в блоке документирующего комментария над функцией `РассчитатьСкидку`. Семантическая подсветка раскрашивает разметку BSLDoc: секции `Параметры`/`Возвращаемое значение`, имена параметров, типы (`Структура`, `Число`, `СправочникСсылка.Клиенты`) и описания выделяются разными цветами.",
+  "en": "The cursor sits in the doc-comment block above the `РассчитатьСкидку` function. Semantic highlighting colors the BSLDoc markup: the `Параметры`/`Возвращаемое значение` sections, parameter names, types (`Структура`, `Число`, `СправочникСсылка.Клиенты`) and descriptions are each shown in distinct colors."
+ },
+ "folding-01": {
+  "ru": "В файле `folding.bsl` пользователь по очереди ставит курсор на блок комментариев, условие и пакет запросов и нажимает `Ctrl+Shift+[`. Каждый блок сворачивается в одну строку с маркером, оставляя видимыми только заголовки и компактную структуру модуля.",
+  "en": "In `folding.bsl` the user places the cursor on a comment block, a conditional and a query batch in turn and presses `Ctrl+Shift+[`. Each block collapses into a single line with a fold marker, leaving only the headers and a compact module structure visible."
+ },
+ "selectionRange-01": {
+  "ru": "Курсор стоит внутри подвыражения условия `Если` в `selection.bsl`, и пользователь несколько раз нажимает `Shift+Alt+→`. Выделение шаг за шагом расширяется по синтаксическим границам — от подвыражения к условию, затем к блоку `Если`, телу процедуры и всему файлу.",
+  "en": "The cursor sits inside a sub-expression of an `Если` condition in `selection.bsl`, and the user presses `Shift+Alt+→` several times. The selection grows step by step along syntactic boundaries — from the sub-expression to the condition, then the `Если` block, the procedure body and the whole file."
+ },
+ "inlayHint-01": {
+  "ru": "В модуле `demo.bsl` курсор переходит к строке с вызовом метода с позиционными аргументами. Прямо перед каждым аргументом редактор показывает встроенную подсказку с именем соответствующего параметра, не меняя сам текст кода.",
+  "en": "In `demo.bsl` the cursor moves to a line with a method call passing positional arguments. Right before each argument the editor shows an inline hint with the name of the matching parameter, without changing the code text itself."
+ },
+ "inlayHint-02-types": {
+  "ru": "В процедуре `ДемоТипов` объявлены переменные через присваивания (`Колонки = Таблица.Колонки`, `ВсегоСтрок = Таблица.Количество()`). После имени каждой переменной редактор показывает встроенную подсказку с выведенным типом: `Колонки: КоллекцияКолонокТаблицыЗначений`, `ВсегоСтрок: Число`.",
+  "en": "In the `ДемоТипов` procedure variables are declared via assignments (`Колонки = Таблица.Колонки`, `ВсегоСтрок = Таблица.Количество()`). After each variable name the editor shows an inline hint with the inferred type: `Колонки: КоллекцияКолонокТаблицыЗначений`, `ВсегоСтрок: Число`."
+ },
+ "color-01": {
+  "ru": "Курсор переходит к строке с `Новый Цвет(...)` в модуле `demo.bsl`. Слева от конструктора редактор рисует квадрат-образец с фактическим цветом значения.",
+  "en": "The cursor moves to a line with `Новый Цвет(...)` in `demo.bsl`. To the left of the constructor the editor draws a swatch showing the actual color of the value."
+ },
+ "color-02-picker": {
+  "ru": "В файле `colorweb.bsl` пользователь кликает по квадрату-образцу рядом с определением цвета, открывая интерактивную палитру. Выбор другого цвета в палитре сразу обновляет аргументы цвета прямо в коде.",
+  "en": "In `colorweb.bsl` the user clicks the swatch next to a color definition, opening the interactive color picker. Picking a different color in the palette immediately updates the color arguments right in the code."
+ },
+ "color-03-webcolor": {
+  "ru": "Курсор стоит на веб-цвете (`WebЦвета.*`) в `colorweb.bsl`, и пользователь через палитру выполняет конвертацию представления. Веб-цвет преобразуется в RGB-конструктор `Новый Цвет(...)` с сохранением того же цвета, и образец остаётся прежним.",
+  "en": "The cursor is on a web color (`WebЦвета.*`) in `colorweb.bsl`, and the user converts its representation via the picker. The web color turns into the `Новый Цвет(...)` RGB constructor while keeping the exact same color, and the swatch stays unchanged."
+ },
+ "workspaceSymbol-01": {
+  "ru": "Пользователь нажимает `Ctrl+T` и набирает `КурсВалюты` для поиска символа по всему проекту. Список мгновенно фильтруется до методов и объектов с этим именем, позволяя сразу перейти к нужному в любом модуле конфигурации.",
+  "en": "The user presses `Ctrl+T` and types `КурсВалюты` to search for a symbol across the whole project. The list instantly filters down to methods and objects with that name, letting you jump straight to the right one in any configuration module."
+ },
+ "workspaceSymbol-02-camelhumps": {
+  "ru": "В поиске символов (`Ctrl+T`) пользователь набирает только первые буквы слов — `ОбщНазн`. Поиск по CamelHumps сопоставляет их с границами слов и находит `ОбщегоНазначения` и связанные с ним символы, не требуя ввода полного имени.",
+  "en": "In workspace symbol search (`Ctrl+T`) the user types just the leading letters of each word — `ОбщНазн`. CamelHumps matching maps them to word boundaries and finds `ОбщегоНазначения` and its related symbols without typing the full name."
+ },
+ "workspaceSymbol-03-substring": {
+  "ru": "В поиске символов (`Ctrl+T`) пользователь вводит подстроку `значен`. Находятся все символы, содержащие этот фрагмент в любой части имени, а результаты ранжируются по релевантности совпадения.",
+  "en": "In workspace symbol search (`Ctrl+T`) the user enters the substring `значен`. All symbols containing that fragment anywhere in the name are found, and the results are ranked by match relevance."
+ },
+ "codeAction-01": {
+  "ru": "Курсор стоит на проблемном месте в `demo.bsl`, и пользователь нажимает `Ctrl+.`. Открывается меню быстрых исправлений с автоматическим quick fix для диагностики и вариантами её отключения.",
+  "en": "The cursor sits on a flagged spot in `demo.bsl`, and the user presses `Ctrl+.`. A quick-fix menu opens, offering an automatic fix for the diagnostic along with options to suppress it."
+ },
+ "formatting-01": {
+  "ru": "В файле `messy.bsl` с неотформатированным кодом (без отступов) пользователь выполняет команду `Format Document`. Весь модуль переформатируется: добавляются вложенные отступы для тела процедуры, цикла и условия, а ключевые слова приводятся к единому регистру.",
+  "en": "In `messy.bsl`, which holds unformatted code with no indentation, the user runs `Format Document`. The whole module is reformatted: nested indentation is added for the procedure body, the loop and the condition, and keywords are normalized to a consistent case."
+ },
+ "formatting-02-ontype": {
+  "ru": "Пользователь набирает процедуру с вложенными `Если`/`Иначе` строку за строкой, нажимая `Enter` после каждой. Форматирование при вводе автоматически выставляет отступы на лету, так что каждый новый уровень вложенности сразу получает правильный сдвиг.",
+  "en": "The user types a procedure with nested `Если`/`Иначе` line by line, pressing `Enter` after each. On-type formatting applies indentation on the fly, so every new nesting level immediately gets the correct offset."
+ },
+ "formatting-03-range": {
+  "ru": "В `range.bsl` пользователь выделяет несколько строк внутри блока `Если` и выполняет команду `Format Selection`. Переформатируется только выделенный фрагмент (ему добавляются отступы), а остальной код процедуры остаётся нетронутым.",
+  "en": "In `range.bsl` the user selects several lines inside the `Если` block and runs `Format Selection`. Only the selected fragment is reformatted (it gets proper indentation), while the rest of the procedure's code is left untouched."
+ },
+ "comp-18-fuzzy": {
+  "ru": "В .os-файле после `СтроковыеУтилиты.` набирается `Форм` — подстрока из середины имени, а не префикс. Нечёткий поиск находит реальный метод модуля `ВыполнитьФорматирование` (совпавшие буквы подсвечены), хотя имя на `Форм` не начинается.",
+  "en": "In an .os file, after `СтроковыеУтилиты.` the substring `Форм` is typed — taken from the middle of the name, not a prefix. Fuzzy matching finds the real module method `ВыполнитьФорматирование` (matched letters highlighted), even though the name does not start with `Форм`."
+ },
+ "workspaceSymbol-04-fuzzy": {
+  "ru": "В палитру `Ctrl+T` вводится аббревиатура `ЗначРекО`. Нечёткий поиск по символам проекта находит методы вроде `ЗначенийРеквизитовОбъекта` — буквы `Знач`/`Рек`/`О` сопоставлены как подпоследовательность и подсвечены.",
+  "en": "The abbreviation `ЗначРекО` is typed into the `Ctrl+T` palette. Fuzzy workspace-symbol search finds methods like `ЗначенийРеквизитовОбъекта` — the letters `Знач`/`Рек`/`О` are matched as a subsequence and highlighted."
+ }
+}

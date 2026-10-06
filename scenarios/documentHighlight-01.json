@@ -1,0 +1,3 @@
+{ "name":"documentHighlight-01","feature":"documentHighlight","title":"Подсветка вхождений символа","titleEn":"Document highlights of a symbol",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"demo.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[{"action":"goto","line":18,"column":6},{"action":"doubleClick","waitMs":1500},{"action":"pause","ms":1300},{"action":"shot","name":"highlight"}]}

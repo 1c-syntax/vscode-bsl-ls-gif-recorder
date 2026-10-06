@@ -1,0 +1,4 @@
+{ "name":"signatureHelp-05-nested","feature":"signatureHelp","title":"Подсказка во вложенном вызове","titleEn":"Signature help inside a nested call",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"sig-nested.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "content":"Функция Сложить(Слагаемое1, Слагаемое2) Экспорт\n\tВозврат Слагаемое1 + Слагаемое2;\nКонецФункции\n\nПроцедура Демо()\n\t\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":6},{"action":"type","text":"Сообщить(Сложить(10, ","delay":90},{"action":"pause","ms":2000},{"action":"shot","name":"sighelp"},{"action":"key","key":"Escape"}]}

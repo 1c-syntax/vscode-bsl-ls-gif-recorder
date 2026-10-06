@@ -1,0 +1,19 @@
+{
+  "name": "def-07-peek",
+  "feature": "definition",
+  "title": "Просмотр определения на месте (Peek, Alt+F12)",
+  "titleEn": "Peek Definition in place (Alt+F12)",
+  "fixture": "demo.bsl",
+  "content": "Процедура Главная() Экспорт\n\tВывестиПриветствие();\nКонецПроцедуры\n\n\n\nПроцедура ВывестиПриветствие()\n\tСообщить(\"Привет, мир!\");\nКонецПроцедуры\n",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 960,
+  "steps": [
+    { "action": "goto", "line": 2, "column": 6 },
+    { "action": "pause", "ms": 1200 },
+    { "action": "peek" },
+    { "action": "pause", "ms": 3000 },
+    { "action": "shot", "name": "peek" },
+    { "action": "pause", "ms": 1500 }
+  ]
+}

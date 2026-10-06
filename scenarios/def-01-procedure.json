@@ -1,0 +1,18 @@
+{
+  "name": "def-01-procedure",
+  "feature": "definition",
+  "title": "Переход к объявлению процедуры",
+  "fixture": "demo.bsl",
+  "content": "Процедура Главная() Экспорт\n\tВывестиПриветствие();\nКонецПроцедуры\n\n\n\nПроцедура ВывестиПриветствие()\n\tСообщить(\"Привет, мир!\");\nКонецПроцедуры\n",
+  "warmupMs": 180000,
+  "fps": 12,
+  "width": 960,
+  "steps": [
+    { "action": "goto", "line": 2, "column": 5 },
+    { "action": "pause", "ms": 1200 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 2500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

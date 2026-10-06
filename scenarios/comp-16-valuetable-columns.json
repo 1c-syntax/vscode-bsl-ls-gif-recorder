@@ -1,0 +1,4 @@
+{ "name":"comp-16-valuetable-columns","feature":"completion","title":"Колонки строки ТаблицыЗначений","titleEn":"ValueTable row columns",
+  "workspace":"/home/coder/project/bsl-demo","fixture":"comp-vt-cols.bsl","warmupMs":90000,"expectSuggest":true,"fps":12,"width":1100,
+  "content":"Процедура ЗаполнитьТаблицу()\n\tТаблица = Новый ТаблицаЗначений;\n\tТаблица.Колонки.Добавить(\"Артикул\");\n\tТаблица.Колонки.Добавить(\"Цена\");\n\tДля Каждого Строка Из Таблица Цикл\n\t\t\n\tКонецЦикла;\nКонецПроцедуры\n",
+  "steps":[{"action":"lineEnd","line":6},{"action":"type","text":"Строка.","delay":160},{"action":"waitSuggest","maxMs":10000},{"action":"pause","ms":2000},{"action":"shot","name":"popup"}]}

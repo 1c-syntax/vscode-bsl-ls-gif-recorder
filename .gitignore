@@ -1,0 +1,40 @@
+# --- Third-party / proprietary binaries (fetched by scripts/setup.sh, never committed) ---
+# bsl-language-server jar + Temurin JRE
+/work/
+# 1C:Enterprise platform help (*.hbk) — proprietary, copy from your own installation
+/v8bin/
+# code-server extensions (installed from open-vsx by setup.sh)
+/extensions/
+*.tar.gz
+*.jar
+
+# --- code-server state: only the user settings are part of the stand ---
+/config/*
+!/config/User/
+/config/User/*
+!/config/User/settings.json
+
+# --- SSL is a submodule (vendor/ssl_3_2) bind-mounted into the container at
+#     /home/coder/project/src; Docker leaves an empty mount point here ---
+/workspace/src/
+
+# --- Recording / build output (published GIFs live at the URLs in gif-urls.json) ---
+/videos/
+/output/
+/baseline-output/
+/dist/
+/FEATURES-html*/
+/FEATURES-html*.zip
+/FEATURES.*.pdf
+/FEATURES.*.md
+*.gif
+*.webm
+*.log
+
+# --- Tooling ---
+node_modules/
+__pycache__/
+.remember/
+.vscode/
+.idea/
+.DS_Store

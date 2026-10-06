@@ -1,0 +1,8 @@
+{ "name":"rename-01","feature":"rename","title":"Переименование символа со всеми использованиями","titleEn":"Rename a symbol across all usages",
+  "workspace":"/home/coder/project/bsl-demo","openQuery":"demo.bsl","warmupMs":90000,"fps":12,"width":1100,
+  "steps":[
+    {"action":"goto","line":11,"column":12},{"action":"pause","ms":900},{"action":"shot","name":"before"},
+    {"action":"key","key":"F2"},{"action":"pause","ms":1000},
+    {"action":"type","text":"Суммировать","delay":120},{"action":"pause","ms":1000},{"action":"shot","name":"rename"},
+    {"action":"key","key":"Enter"},{"action":"pause","ms":1600},{"action":"shot","name":"renamed"}
+  ]}

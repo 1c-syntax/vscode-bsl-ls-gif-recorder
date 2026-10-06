@@ -1,0 +1,19 @@
+{
+  "name": "def-11-oscript-class-no-constructor",
+  "feature": "definition",
+  "title": "Переход к классу OneScript без конструктора",
+  "titleEn": "Go to a OneScript class without a constructor",
+  "workspace": "/home/coder/project/oscript-demo",
+  "openQuery": "src/demo.os",
+  "warmupMs": 90000,
+  "fps": 12,
+  "width": 1100,
+  "steps": [
+    { "action": "goto", "line": 12, "column": 27 },
+    { "action": "pause", "ms": 1500 },
+    { "action": "shot", "name": "usage" },
+    { "action": "key", "key": "F12" },
+    { "action": "pause", "ms": 3500 },
+    { "action": "shot", "name": "definition" }
+  ]
+}

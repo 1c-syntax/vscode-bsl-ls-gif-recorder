@@ -1,0 +1,3 @@
+{ "name":"workspaceSymbol-02-camelhumps","feature":"workspaceSymbol","title":"Поиск символов: разбиение по словам (CamelHumps)","titleEn":"Workspace symbol search: CamelHumps",
+  "openQuery":"src/cf/CommonModules/ОбщегоНазначения/Ext/Module.bsl","warmupMs":180000,"fps":12,"width":1100,
+  "steps":[{"action":"key","key":"Control+KeyT"},{"action":"pause","ms":1000},{"action":"type","text":"ОбщНазн","delay":140},{"action":"pause","ms":2000},{"action":"shot","name":"symbols"}]}

@@ -1,0 +1,11 @@
+{
+ "workspace": "/home/coder/project",
+ "warmupMs": 180000,
+ "scenarios": [
+  "comp-07-common-module-members",
+  "comp-08-metadata-collection",
+  "comp-09-enum-values",
+  "comp-17-predefined-items",
+  "hover-08-common-module"
+ ]
+}
